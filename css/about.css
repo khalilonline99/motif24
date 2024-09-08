@@ -1,0 +1,491 @@
+/* preloader */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #232323;
+    /* 	background-color: white; */
+    overflow: hidden;
+    z-index: 150;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    overflow: hidden;
+    color: white;
+    opacity: 0;
+
+}
+
+.big-text {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 5rem;
+    color: white !important;
+}
+
+.loading-percentage-container {
+    display: none;
+    color: white;
+    align-items: center;
+    padding-top: 6rem;
+}
+
+.loading-number {
+    color: white !important;
+    transition: none;
+    /* 		opacity: 0; */
+}
+
+.loading-percentage {
+    color: white !important;
+}
+
+
+/* 	scribbles */
+.loader_scribble__container .loader_scribbles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 155;
+    opacity: 0.2;
+}
+
+.scribbles_lines svg {
+    -webkit-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    min-width: 100vh;
+    height: 100vh;
+}
+
+.scribbles_lines svg path {
+    stroke: white;
+}
+
+
+.reveal-type2, .initial-loading-text {
+    color: #757575;
+}
+.initial-loading-text {
+    display: none; /* Initially hidden */
+    opacity: 0;
+	color: #ffffff;
+    position: fixed;
+    top: 15%;
+    left: 15%;
+    max-width: 75%;
+    z-index: 999999;
+    font-family: "ClashDisplay", Sans-serif;
+    font-size: calc(100vw/30);
+    font-weight: 500;
+    line-height: 1.2em;
+    word-spacing: 5px;
+}
+
+/* 	end */
+/* hero desktop */
+#campsuleImage {
+    width: 8vw;
+	visibility: hidden;
+    /*width: 0;*/
+    height: 3.2vw;
+    -webkit-border-radius: 3vw;
+    -moz-border-radius: 3vw;
+    border-radius: 3vw;
+    border: none;
+    background-size: 9vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: content-box;
+    display: inline-flex;
+    vertical-align: middle;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    animation: changeBg 10s infinite;
+}
+
+@keyframes changeBg {
+    0% {
+        background-image: url("https://wemotif.com/finalstaging/wp-content/uploads/2023/07/home-8-img-2.jpg");
+    }
+
+    25% {
+        background-image: url("https://wemotif.com/finalstaging/wp-content/uploads/2023/07/home-8-img-2.jpg");
+    }
+
+    50% {
+        background-image: url("https://wemotif.com/finalstaging/wp-content/uploads/2023/07/LACE.png");
+    }
+
+    75% {
+        background-image: url("https://wemotif.com/finalstaging/wp-content/uploads/2023/09/blog-list-img-8.jpg");
+    }
+
+    100% {
+        background-image: url("https://wemotif.com/finalstaging/wp-content/uploads/2023/07/home-8-img-2.jpg");
+    }
+}
+
+.split-child-1 {
+    display: inline-block;
+    /*opacity: 0;*/
+    transform: translate(0%, -100%);
+}
+
+.split-parent-1 {
+    overflow: hidden;
+}
+
+.large-text-split-1>div {
+    position: relative;
+    margin: 0;
+}
+
+.large-text-split-1 {
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+}
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+    #campsuleImage {
+        height: 11vw;
+        width: 25vw;
+        border-radius: 5vw;
+        border: none;
+        background-size: 25vw;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-origin: content-box;
+        display: inline-flex;
+        vertical-align: middle;
+        margin-left: 3%;
+    }
+}
+
+
+
+/*@media (min-width: 500px) and (max-width: 767px) {*/
+/*    .elementor-118025 .elementor-element.elementor-element-f6edc49 .elementor-heading-title {*/
+/*        line-height: 1em;*/
+/*    }*/
+/*}*/
+
+
+/* sub heading */
+.reveal-sub-heading-text {
+   opacity: 0;
+}
+
+.reveal-sub-heading-text .line {
+    height: 30px;
+}
+
+/* full width image */
+:root {
+    --container-width: 600px;
+}
+
+#project-image_container {
+    max-width: 100%;
+    margin: 0 auto;
+    opacity: 0;
+}
+
+
+#project__parallax {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    /*height: 100%;*/
+    height: calc(var(--vh) * 100);
+}
+
+#project_figure {
+    height: 100%;
+    width: 100%;
+    clip-path: inset(0px 20vw);
+}
+
+
+
+#project__inner {
+    max-width: calc(var(--vw) * 100);
+    margin-left: calc(50% - (var(--vw) * 50));
+    margin-right: calc(50% - (var(--vw) * 50));
+    width: auto;
+    overflow: hidden;
+}
+
+div#project-image_container {
+    transition: inherit !important;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    #project__parallax {
+        height: 100%;
+    }
+
+    #project_figure {
+        height: 100%;
+        clip-path: inset(0px 3%);
+    }
+
+    #project__inner {
+        display: flex;
+        align-items: center;
+        height: 40vh;
+    }
+
+    #project-image_container {
+        height: 40vh;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    #project__parallax {
+        height: max-content;
+        height: calc(var(--vh) * 40);
+    }
+
+    #project_figure {
+        height: 70%;
+    }
+
+    #project__inner {
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+/*  */
+.fadein-basic {
+    opacity: 1;
+}
+
+/* heading with sub heading ABOUT MOTIF*/
+.special-heading {
+    font-weight: 600;
+    color: #f1f1f1;
+}
+
+.split-child-2 {
+    display: inline-block;
+    opacity: 0;
+    transform: translate(0%, -100%);
+}
+
+.split-parent-2 {
+    overflow: hidden;
+}
+
+.medium-text-split-1>div {
+    position: relative;
+    margin: 0;
+}
+
+.medium-text-split-1 {
+    position: relative;
+    overflow: hidden;
+    /*opacity: 0;*/
+}
+
+.about-motif-p {
+    /*opacity: 0;*/
+}
+
+/* office image custom */
+.office-image {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    height: 80vh !important;
+    overflow: hidden;
+    
+  }
+  
+  .office-image img {
+    border-radius: 14px;
+    opacity: 1;
+  }
+  
+  @media only screen and (max-width: 1024px){
+     .office-image {
+    gap: 25px;
+    height: 60vh !important;
+    overflow: hidden;
+    padding-left: 1.5rem;
+  }
+  }
+  
+  @media only screen and (max-width: 767px){
+     .office-image {
+    gap: 25px;
+    height: 30vh !important;
+    overflow: hidden;
+    padding-left: 1rem;
+  }
+  }
+  
+  
+/* big heading.. The founding story of motif */
+.split-child-big-text-anim {
+    display: inline-block;
+    transform: translate(0%, -100%);
+  }
+  .split-parent-big-text-anim {
+    overflow: hidden;
+  }
+  .big-text-anim > div {
+  position: relative;
+  margin: 0;
+  }
+  .big-text-anim {
+      position: relative;
+      overflow: hidden;
+      /*opacity: 0;*/
+  }
+
+
+
+
+/* story heading */
+.story-heading > div {
+    position: relative;
+    margin: 0;
+    }
+    .story-heading {
+        position: relative;
+        overflow: hidden;
+        /*opacity: 0;*/
+    }
+    .split-parent-story-heading {
+      overflow: hidden;
+    }
+    .split-child-story-heading {
+      display: inline-block;
+      transform: translate(0%, -100%);
+      }
+
+
+  
+      /*.story-p {*/
+/*    opacity: 0;*/
+/*}*/
+
+
+/* custom quote */
+blockquote {
+    color: white;
+    font-size: calc(100vw/45);
+     margin: 0;
+    }
+    cite {
+      display: block;
+      text-align: left;
+      font-family: "ClashDisplay", Sans-serif;
+      margin-top: 2.5rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: white;
+      font-style: normal;
+    }
+    blockquote p {
+      font-family: "ClashDisplay", Sans-serif;
+      font-weight: 600;
+      line-height: 1.2;
+      letter-spacing: 1px;
+    }
+    blockquote p span { 
+      will-change: opacity, filter;
+      opacity: 0;
+      filter: blur(0px);
+    }
+    /*p {*/
+    /*  quotes: "“" "”" "‘" "’";*/
+    /*}*/
+    /*p:before {*/
+    /*    content: open-quote;*/
+    /*    margin-right: .8rem;*/
+    /*}*/
+    /*p:after {*/
+    /*  content: close-quote;*/
+    /*}*/
+    /*p:before, p:after {*/
+    /*  color: #ccc;*/
+    /*  font-size: 4rem;*/
+    /*}*/
+    @media only screen and (max-width: 1024px) {
+        blockquote {
+        font-size: calc(100vw/30);
+        
+        margin: 0;
+        }
+        cite {
+            font-size: calc(100vw/45);
+            margin-top: 45px;
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        blockquote {
+        font-size: calc(100vw/25);
+        margin: 0;
+        }
+        cite {
+            font-size: calc(100vw/25);
+            margin: 0;
+        }
+    }
+
+
+
+    /* what why heading */
+
+  .what-why-heading > div {
+    position: relative;
+    margin: 0;
+    }
+    .what-why-heading {
+        position: relative;
+        overflow: hidden;
+        /*opacity: 0;*/
+    }
+    .split-parent-what-why-heading {
+      overflow: hidden;
+    }
+    .split-child-what-why-heading {
+      display: inline-block;
+      transform: translate(0%, -100%);
+      }
+      
+      
+  @media only screen and (max-width: 767px) {
+  
+      
+  }
+
+  
