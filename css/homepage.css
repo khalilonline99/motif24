@@ -1,7 +1,8 @@
 
 
 /* scroll bar */
-/* body::-webkit-scrollbar-track {
+/*  
+body::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     background-color: #F5F5F5;
@@ -15,16 +16,17 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
-    /* background-color: rgb(246, 85, 22); */
+    background-color: rgb(246, 85, 22);
     background-image: -webkit-gradient(linear,
-            left bottom,
+    left bottom,
             left top,
             color-stop(0.44, rgb(255, 141, 95)),
             color-stop(0.72, rgb(248, 116, 64)),
             color-stop(0.86, rgb(246, 85, 22)));
-} */
-
-
+        } 
+        
+        
+        */
 
 .motif-badge-fixed-position {
     right: '-9vw';
