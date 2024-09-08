@@ -72,7 +72,7 @@ function hello_elementor_child_scripts_styles()
             HELLO_ELEMENTOR_CHILD_VERSION
         );
 
-        // wp_enqueue_script('js-homepage', get_stylesheet_directory_uri() . '/js/homepage.js', array('jquery'), '', true);
+        wp_enqueue_script('js-homepage', get_stylesheet_directory_uri() . '/js/homepage.js', array('jquery'), '', true);
     }
     elseif (is_page(131269)) { 
         // what we do
