@@ -111,26 +111,26 @@ window.addEventListener('load', function () {
             .to(".scribbles_lines svg", { display: 'none', opacity: 0 })
             .to(".preloader", { display: "none" })
             // .to("body", { overflow: "auto", onComplete: loadHomepageAnimations });
-            .to("body", { overflow: "auto", onComplete: loadPageSpecificScripts });
+            .to("body", { overflow: "auto"});
     }
 
-    function loadPageSpecificScripts() {
-        let pageID = document.body.getAttribute('data-page-id'); 
+    // function loadPageSpecificScripts() {
+    //     let pageID = document.body.getAttribute('data-page-id');
 
-        if (pageID === 'homepage') {
-            loadScript('/finalstaging/wp-content/themes/motif24/js/homepage.js');
-        } else if (pageID === 'what-we-do') {
-            loadScript('/finalstaging/wp-content/themes/motif24/js/what-we-do.js');
-        }
-    }
+    //     if (pageID === 'homepage') {
+    //         loadScript('/finalstaging/wp-content/themes/motif24/js/homepage.js');
+    //     } else if (pageID === 'what-we-do') {
+    //         loadScript('/finalstaging/wp-content/themes/motif24/js/what-we-do.js');
+    //     }
+    // }
 
-    function loadScript(scriptUrl) {
-        let script = document.createElement('script');
-        script.src = scriptUrl;
-        script.type = 'text/javascript';
-        script.async = true;
-        document.body.appendChild(script);
-    }
+    // function loadScript(scriptUrl) {
+    //     let script = document.createElement('script');
+    //     script.src = scriptUrl;
+    //     script.type = 'text/javascript';
+    //     script.async = true;
+    //     document.body.appendChild(script);
+    // }
 
 
     //--------Preloader Animation 1 END

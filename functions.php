@@ -56,7 +56,7 @@ function hello_elementor_child_scripts_styles()
 
     include(get_stylesheet_directory() . '/html/homepage.html'); // loading html here
     
-    echo '<script>document.body.setAttribute("data-page-id", "' . $post->post_name . '");</script>';
+    // echo '<script>document.body.setAttribute("data-page-id", "' . $post->post_name . '");</script>';
 
     wp_enqueue_script('js-preloader', get_stylesheet_directory_uri() . '/js/preloader.js', array('jquery'), '', true);
 
@@ -74,6 +74,7 @@ function hello_elementor_child_scripts_styles()
 
         wp_enqueue_script('js-homepage', get_stylesheet_directory_uri() . '/js/homepage.js', array('jquery'), '', true);
     }
+
     elseif (is_page(131269)) { 
         // what we do
         wp_enqueue_style(
@@ -86,6 +87,7 @@ function hello_elementor_child_scripts_styles()
         );
         wp_enqueue_script('js-what-we-do', get_stylesheet_directory_uri() . '/js/what-we-do.js', array('jquery'), '', true);
     }
+
     elseif (is_page(119786)) { 
         // how we do
         wp_enqueue_style(
@@ -98,6 +100,7 @@ function hello_elementor_child_scripts_styles()
         );
         wp_enqueue_script('js-how-we-do', get_stylesheet_directory_uri() . '/js/how-we-do.js', array('jquery'), '', true);
     }
+
     elseif (strpos($perma, '/finalstaging/about') !== false) { 
         //about page
         wp_enqueue_style(
@@ -110,6 +113,7 @@ function hello_elementor_child_scripts_styles()
         );
 		wp_enqueue_script('js-about', get_stylesheet_directory_uri() . '/js/about.js', array('jquery'), '', true);
     }
+
     elseif (strpos($perma, '/finalstaging/the-motif-process') !== false) { 
         //motif process
         wp_enqueue_style(
@@ -122,6 +126,7 @@ function hello_elementor_child_scripts_styles()
         );
 		wp_enqueue_script('js-how-we-do', get_stylesheet_directory_uri() . '/js/how-we-do.js', array('jquery'), '', true);
     }
+
     elseif (strpos($perma, '/finalstaging/why-motif') !== false) { 
         //why motif page
         wp_enqueue_style(
@@ -134,6 +139,7 @@ function hello_elementor_child_scripts_styles()
         );
 		wp_enqueue_script('js-why-motif', get_stylesheet_directory_uri() . '/js/why-motif.js', array('jquery'), '', true);
     }
+
     elseif (strpos($perma, '/finalstaging/contact') !== false) {
         //contact page
         wp_enqueue_style(
@@ -146,6 +152,7 @@ function hello_elementor_child_scripts_styles()
         );
 		wp_enqueue_script('js-contact', get_stylesheet_directory_uri() . '/js/contact.js', array('jquery'), '', true);
     } 
+
     elseif (
         strpos($perma, '/finalstaging/pulse-b2b-commerce-agency') !== false
     ) {
