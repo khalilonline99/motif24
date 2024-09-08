@@ -48,13 +48,14 @@ define('HELLO_ELEMENTOR_CHILD_VERSION', '2.0.0');
 function hello_elementor_child_scripts_styles()
 {
     global $post;
-    // $perma = get_permalink($post->ID);
+    $perma = get_permalink($post->ID);
     // $page_id = $post->ID;
 
     // if (strpos($perma, '/finalstaging/what-we-do') !== false){
 
 
     include(get_stylesheet_directory() . '/html/homepage.html'); // loading html here
+    
     echo '<script>document.body.setAttribute("data-page-id", "' . $post->post_name . '");</script>';
 
     wp_enqueue_script('js-preloader', get_stylesheet_directory_uri() . '/js/preloader.js', array('jquery'), '', true);
