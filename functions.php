@@ -30,36 +30,6 @@ function hello_elementor_child_scripts_styles()
     $perma = get_permalink($post->ID);
 
 
-    // GSAP Core
-    wp_enqueue_script('gsap-core', 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js', array(), null, true);
-
-    // Additional GSAP Plugins
-    wp_enqueue_script('gsap-flip', 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js', array('gsap-core'), null, true);
-    wp_enqueue_script('gsap-scrolltrigger', 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js', array('gsap-core'), null, true);
-    wp_enqueue_script('gsap-scrollto', 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js', array('gsap-core'), null, true);
-    wp_enqueue_script('gsap-draggable', 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js', array('gsap-core'), null, true);
-    wp_enqueue_script('gsap-easel', 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/EaselPlugin.min.js', array('gsap-core'), null, true);
-    wp_enqueue_script('gsap-text', 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js', array('gsap-core'), null, true);
-    wp_enqueue_script('gsap-easepack', 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/EasePack.min.js', array('gsap-core'), null, true);
-    wp_enqueue_script('gsap-custom', 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/CustomEase.min.js', array('gsap-core'), null, true);
-    wp_enqueue_script('gsap-tweenmax', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js', array('gsap-core'), null, true);
-
-    // Popper.js for tooltips and dropdowns
-    wp_enqueue_script('popper-js', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js', array(), null, true);
-
-    // Three.js for 3D animations
-    wp_enqueue_script('three-js', 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js', array(), null, true);
-
-    // Lenis for smooth scrolling
-    wp_enqueue_script('lenis-js', 'https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.23/bundled/lenis.min.js', array(), null, true);
-
-    // Scroll Smoother custom library
-    wp_enqueue_script('scroll-smoother', get_stylesheet_directory_uri() . '/lib/ScrollSmoother.min.js', array('jquery'), '', true);
-
-    // Ensure jQuery is added
-    wp_enqueue_script('jquery');
-
-
     wp_enqueue_style(
         'hello-elementor-child-style-homepage',
         get_stylesheet_directory_uri() . '/style.css',
