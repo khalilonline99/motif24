@@ -9,6 +9,19 @@ Version: 3.0.0
 /* Add your custom styles here */
 
 /* preloader */
+
+body {
+    background: black;
+    /*cursor: none;*/
+    overflow-x: hidden !important;
+    /*padding: 0 2%;*/
+}
+/*.primary-button--2 {*/
+/*    cursor: none;*/
+/*}*/
+
+
+
 .preloader {
     position: fixed;
     top: 0;

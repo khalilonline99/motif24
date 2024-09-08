@@ -22,28 +22,7 @@ define('HELLO_ELEMENTOR_CHILD_VERSION', '2.0.0');
  *
  * @return void
  */
-// function hello_elementor_child_scripts_styles() {
 
-// 	wp_enqueue_style(
-// 		'hello-elementor-child-style',
-// 		get_stylesheet_directory_uri() . '/style.css',
-// 		[
-// 			'hello-elementor-theme-style',
-// 		],
-// 		HELLO_ELEMENTOR_CHILD_VERSION
-// 	);
-
-// 	wp_enqueue_style(
-// 		'hello-elementor-child-style-what-we-do',
-// 		get_stylesheet_directory_uri() . '/what-we-do.css',
-// 		[
-// 			'hello-elementor-theme-style',
-// 		],
-// 		HELLO_ELEMENTOR_CHILD_VERSION
-// 	);
-
-// }
-// add_action( 'wp_enqueue_scripts', 'hello_elementor_child_scripts_styles', 20 );
 
 function hello_elementor_child_scripts_styles()
 {
@@ -55,6 +34,14 @@ function hello_elementor_child_scripts_styles()
 
 
     include(get_stylesheet_directory() . '/html/homepage.html'); // loading html here
+    wp_enqueue_style(
+        'hello-elementor-child-style-homepage',
+        get_stylesheet_directory_uri() . 'style.css',
+        [
+            'hello-elementor-theme-style',
+        ],
+        HELLO_ELEMENTOR_CHILD_VERSION
+    );
     
     // echo '<script>document.body.setAttribute("data-page-id", "' . $post->post_name . '");</script>';
 
