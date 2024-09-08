@@ -118,9 +118,9 @@ window.addEventListener('load', function () {
         let pageID = document.body.getAttribute('data-page-id'); 
 
         if (pageID === 'homepage') {
-            loadScript('/js/homepage.js');
+            loadScript('/finalstaging/wp-content/themes/motif24/js/homepage.js');
         } else if (pageID === 'what-we-do') {
-            loadScript('/js/what-we-do.js');
+            loadScript('/finalstaging/wp-content/themes/motif24/js/what-we-do.js');
         }
     }
 
