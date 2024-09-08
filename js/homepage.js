@@ -21,7 +21,7 @@ window.onload = function () {
         // ======GSAP started from here ====== //
 
         gsap.registerPlugin(SplitText, ScrollTrigger, CustomEase, 
-            // ScrollSmoother
+            ScrollSmoother
         );
         ScrollSmoother.create({
             smooth: 1,
