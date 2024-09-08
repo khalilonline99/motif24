@@ -118,9 +118,9 @@ window.addEventListener('load', function () {
         let pageID = document.body.getAttribute('data-page-id'); 
 
         if (pageID === 'homepage') {
-            loadScript('../js/homepage.js');
+            loadScript('/js/homepage.js');
         } else if (pageID === 'what-we-do') {
-            loadScript('../js/what-we-do.js');
+            loadScript('/js/what-we-do.js');
         }
     }
 
