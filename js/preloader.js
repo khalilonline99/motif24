@@ -111,7 +111,25 @@ window.addEventListener('load', function () {
             .to(".scribbles_lines svg", { display: 'none', opacity: 0 })
             .to(".preloader", { display: "none" })
             // .to("body", { overflow: "auto", onComplete: loadHomepageAnimations });
-            .to("body", { overflow: "auto"});
+            .to("body", { overflow: "auto", onComplete: loadPageSpecificScripts });
+    }
+
+    function loadPageSpecificScripts() {
+        let pageID = document.body.getAttribute('data-page-id'); 
+
+        if (pageID === 'homepage') {
+            loadScript('../js/homepage.js');
+        } else if (pageID === 'what-we-do') {
+            loadScript('../js/what-we-do.js');
+        }
+    }
+
+    function loadScript(scriptUrl) {
+        let script = document.createElement('script');
+        script.src = scriptUrl;
+        script.type = 'text/javascript';
+        script.async = true;
+        document.body.appendChild(script);
     }
 
 
