@@ -110,7 +110,8 @@ window.addEventListener('load', function () {
             .to(".preloader", { duration: 1, height: "0vh", ease: "Power3.easeOut" })
             .to(".scribbles_lines svg", { display: 'none', opacity: 0 })
             .to(".preloader", { display: "none" })
-            .to("body", { overflow: "auto", onComplete: loadHomepageAnimations });
+            // .to("body", { overflow: "auto", onComplete: loadHomepageAnimations });
+            .to("body", { overflow: "auto"});
     }
 
 
