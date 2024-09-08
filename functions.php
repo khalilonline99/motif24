@@ -54,10 +54,7 @@ function hello_elementor_child_scripts_styles()
     wp_enqueue_script('lenis-js', 'https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.23/bundled/lenis.min.js', array(), null, true);
 
     // Scroll Smoother custom library
-    add_action('wp_head', function() {
-        echo '<script src="/finalstaging/wp-content/themes/motif24/lib/ScrollSmoother.min.js"></script>';
-    });
-    
+    wp_enqueue_script('scroll-smoother', get_stylesheet_directory_uri() . '/lib/ScrollSmoother.min.js', array('jquery'), '', true);
 
     // Ensure jQuery is added
     wp_enqueue_script('jquery');
