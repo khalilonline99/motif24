@@ -55,10 +55,10 @@ function hello_elementor_child_scripts_styles()
 
 
     include(get_stylesheet_directory() . '/html/homepage.html'); // loading html here
+    echo '<script>document.body.setAttribute("data-page-id", "' . $post->post_name . '");</script>';
 
     wp_enqueue_script('js-preloader', get_stylesheet_directory_uri() . '/js/preloader.js', array('jquery'), '', true);
 
-    echo '<script>document.body.setAttribute("data-page-id", "' . $post->post_name . '");</script>';
 
     if (is_page(122661)) { 
         //homepage
