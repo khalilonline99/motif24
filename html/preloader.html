@@ -261,6 +261,7 @@
 
         if (firstVisit === null) {
             localStorage.setItem('visited', 1);
+            localStorage.setItem('loadingScreen', 0);
             document.querySelector(".initial-loading-text").style.display = "block";
             document.querySelector(".initial-loading-text").style.opacity = 1;
 
@@ -290,6 +291,7 @@
 
 
         } else {
+            localStorage.setItem('loadingScreen', 0);
             document.querySelector('.loading-percentage-container').style.display = 'flex';
             gsap.to('.loading-number', {
                 textContent: 100,
