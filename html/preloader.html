@@ -261,7 +261,6 @@
 
         if (firstVisit === null) {
             localStorage.setItem('visited', 1);
-            localStorage.setItem('loadingScreen', 0);
             document.querySelector(".initial-loading-text").style.display = "block";
             document.querySelector(".initial-loading-text").style.opacity = 1;
 
@@ -287,11 +286,10 @@
                 .set(".scribbles_lines svg", { display: 'none' })
                 .to(".preloader", { display: "none" })
                 // .to("body", { overflow: "auto", onComplete: loadHomepageAnimations });
-                .to("body", { overflow: "auto" , onComplete: loadHomepageAnimation });
+                .to("body", { overflow: "auto" });
 
 
         } else {
-            localStorage.setItem('loadingScreen', 0);
             document.querySelector('.loading-percentage-container').style.display = 'flex';
             gsap.to('.loading-number', {
                 textContent: 100,
@@ -322,13 +320,9 @@
                 .to(".scribbles_lines svg", { display: 'none', opacity: 0 })
                 .to(".preloader", { display: "none" })
                 // .to("body", { overflow: "auto", onComplete: loadHomepageAnimations });
-                .to("body", { overflow: "auto" , onComplete: loadHomepageAnimation });
+                .to("body", { overflow: "auto" });
         }
 
-        function loadHomepageAnimation () {
-            console.log('loading set on storage');            
-            localStorage.setItem('loadingScreen', 1);
-        }
 
         // function loadPageSpecificScripts() {
         //     let pageID = document.body.getAttribute('data-page-id');

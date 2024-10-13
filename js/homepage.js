@@ -1,6 +1,6 @@
 window.onload = function () {
-    const checkLoadingComplete = localStorage.getItem("loadingScreen");
-    if (checkLoadingComplete == 1) {
+
+    setTimeout(function () {
 
         //function loadHomepageAnimations() {
 
@@ -975,9 +975,11 @@ window.onload = function () {
         });
 
 
-
         // loadHomepageAnimations Ends
         //}
-    }
+
+    }, 5000);
+
+
 
 }
