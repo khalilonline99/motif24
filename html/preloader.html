@@ -259,68 +259,68 @@
             .to(svgAll[3], 0.1, { autoAlpha: 1 })
             .to(svgAll[3], 0.1, { autoAlpha: 0 });
 
-        if (firstVisit === null) {
-            localStorage.setItem('visited', 1);
-            document.querySelector(".initial-loading-text").style.display = "block";
-            document.querySelector(".initial-loading-text").style.opacity = 1;
+        // if (firstVisit === null) {
+        //     localStorage.setItem('visited', 1);
+        //     document.querySelector(".initial-loading-text").style.display = "block";
+        //     document.querySelector(".initial-loading-text").style.opacity = 1;
 
-            let typeSplit = new SplitType('[animate]', {
-                types: 'lines, words, chars',
-                tagName: 'span'
-            });
+        //     let typeSplit = new SplitType('[animate]', {
+        //         types: 'lines, words, chars',
+        //         tagName: 'span'
+        //     });
 
-            tlPreloader
-                .to("body", { overflow: "hidden" })
-                .from('[animate] .word', {
-                    y: '100%',
-                    opacity: 0,
-                    duration: 1,
-                    ease: 'sine.out',
-                    stagger: 0.1,
-                    color: '#ffffff',
-                })
-                .to(".initial-loading-text", { opacity: 0, duration: 1, ease: "Power3.easeOut" })
-                .to(".scribbles_lines svg", { opacity: 0, duration: 1, ease: "Power3.easeOut" }, "<")
-                .to(".preloader", { duration: 1, height: "0vh", ease: "Power3.easeOut" }, "-=0.5")
-                .set(".initial-loading-text", { display: 'none' })
-                .set(".scribbles_lines svg", { display: 'none' })
-                .to(".preloader", { display: "none" })
-                .to("body", { overflow: "auto", onComplete: loadHomepageAnimations });
+        //     tlPreloader
+        //         .to("body", { overflow: "hidden" })
+        //         .from('[animate] .word', {
+        //             y: '100%',
+        //             opacity: 0,
+        //             duration: 1,
+        //             ease: 'sine.out',
+        //             stagger: 0.1,
+        //             color: '#ffffff',
+        //         })
+        //         .to(".initial-loading-text", { opacity: 0, duration: 1, ease: "Power3.easeOut" })
+        //         .to(".scribbles_lines svg", { opacity: 0, duration: 1, ease: "Power3.easeOut" }, "<")
+        //         .to(".preloader", { duration: 1, height: "0vh", ease: "Power3.easeOut" }, "-=0.5")
+        //         .set(".initial-loading-text", { display: 'none' })
+        //         .set(".scribbles_lines svg", { display: 'none' })
+        //         .to(".preloader", { display: "none" })
+        //         .to("body", { overflow: "auto", onComplete: loadHomepageAnimations });
 
 
-        } else {
-            document.querySelector('.loading-percentage-container').style.display = 'flex';
-            gsap.to('.loading-number', {
-                textContent: 100,
-                autoAlpha: 1,
-                opacity: 1,
-                duration: 3,
-                ease: "power1.in",
-                snap: { textContent: 1 },
-                stagger: { each: 1.0 },
-                onComplete: () => {
-                    gsap.to('.loading-number, .loading-percentage', { opacity: 0, duration: 0.1 });
-                    seoTween.pause();
-                    var elementToRemove = document.querySelector('.loader_scribble__container');
-                    if (elementToRemove) {
-                        elementToRemove.style.display = 'none';
-                        elementToRemove.parentNode.removeChild(elementToRemove);
-                    }
-                }
-            });
+        // } else {
+        //     document.querySelector('.loading-percentage-container').style.display = 'flex';
+        //     gsap.to('.loading-number', {
+        //         textContent: 100,
+        //         autoAlpha: 1,
+        //         opacity: 1,
+        //         duration: 3,
+        //         ease: "power1.in",
+        //         snap: { textContent: 1 },
+        //         stagger: { each: 1.0 },
+        //         onComplete: () => {
+        //             gsap.to('.loading-number, .loading-percentage', { opacity: 0, duration: 0.1 });
+        //             seoTween.pause();
+        //             var elementToRemove = document.querySelector('.loader_scribble__container');
+        //             if (elementToRemove) {
+        //                 elementToRemove.style.display = 'none';
+        //                 elementToRemove.parentNode.removeChild(elementToRemove);
+        //             }
+        //         }
+        //     });
 
-            tlPreloader
-                .to("body", { overflow: "hidden" })
-                .set(".initial-loading-text", { display: 'none', opacity: 0 })
-                .to(".preloader .text-container", { duration: 0, opacity: 1, ease: "Power3.easeOut" })
-                .from(".preloader .text-container h1", { duration: 1.5, delay: 0.2, y: 200, skewY: 10, stagger: 0.4, ease: "Power3.easeOut" })
-                .to(".preloader .text-container h1", { duration: 1.6, y: 200, skewY: -20, stagger: 0.2, ease: "Power3.easeOut" })
-                .to(".preloader", { duration: 1, height: "0vh", ease: "Power3.easeOut" })
-                .to(".scribbles_lines svg", { display: 'none', opacity: 0 })
-                .to(".preloader", { display: "none" })
-                // .to("body", { overflow: "auto", onComplete: loadHomepageAnimations });
-                .to("body", { overflow: "auto" });
-        }
+        //     tlPreloader
+        //         .to("body", { overflow: "hidden" })
+        //         .set(".initial-loading-text", { display: 'none', opacity: 0 })
+        //         .to(".preloader .text-container", { duration: 0, opacity: 1, ease: "Power3.easeOut" })
+        //         .from(".preloader .text-container h1", { duration: 1.5, delay: 0.2, y: 200, skewY: 10, stagger: 0.4, ease: "Power3.easeOut" })
+        //         .to(".preloader .text-container h1", { duration: 1.6, y: 200, skewY: -20, stagger: 0.2, ease: "Power3.easeOut" })
+        //         .to(".preloader", { duration: 1, height: "0vh", ease: "Power3.easeOut" })
+        //         .to(".scribbles_lines svg", { display: 'none', opacity: 0 })
+        //         .to(".preloader", { display: "none" })
+        //         // .to("body", { overflow: "auto", onComplete: loadHomepageAnimations });
+        //         .to("body", { overflow: "auto" });
+        // }
 
         // function loadPageSpecificScripts() {
         //     let pageID = document.body.getAttribute('data-page-id');
