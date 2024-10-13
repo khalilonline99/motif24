@@ -253,8 +253,11 @@ window.onload = function () {
                     {
                         duration: 1.5,
                         opacity: 1,
+                        ease: "elastic.out(1,1)",
                         scrollTrigger: {
                             trigger: ".portfolio__slider",
+                            start: isDesktop ? "top middle" : "20px 40%",
+                            end: "+=400",
                             toggleActions: "play complete none none"
                         }
                     }
