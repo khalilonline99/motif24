@@ -39,7 +39,7 @@ function hello_elementor_child_scripts_styles()
         HELLO_ELEMENTOR_CHILD_VERSION
     );
 
-    include(get_stylesheet_directory() . '/html/preloader.html'); // loading html here
+    include(get_stylesheet_directory() . '/html/preloader.html'); // loading html from here
 
 
 
