@@ -260,6 +260,7 @@
             .to(svgAll[3], 0.1, { autoAlpha: 0 });
 
         if (firstVisit === null) {
+            localStorage.setItem('visited', 1);
             document.querySelector(".initial-loading-text").style.display = "block";
             document.querySelector(".initial-loading-text").style.opacity = 1;
 
@@ -275,7 +276,7 @@
                     opacity: 0,
                     duration: 1,
                     ease: 'sine.out',
-                    stagger: 0.3,
+                    stagger: 0.1,
                     color: '#ffffff',
                 })
                 .to(".initial-loading-text", { opacity: 0, duration: 1, ease: "Power3.easeOut" })
@@ -286,7 +287,6 @@
                 .to(".preloader", { display: "none" })
                 .to("body", { overflow: "auto", onComplete: loadHomepageAnimations });
 
-            localStorage.setItem('visited', 1);
 
         } else {
             document.querySelector('.loading-percentage-container').style.display = 'flex';
