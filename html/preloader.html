@@ -259,7 +259,7 @@
             .to(svgAll[3], 0.1, { autoAlpha: 1 })
             .to(svgAll[3], 0.1, { autoAlpha: 0 });
 
-        if (firstVisit == null) {
+        if (firstVisit === 0) {
             document.querySelector(".initial-loading-text").style.display = "block";
             document.querySelector(".initial-loading-text").style.opacity = 1;
 
