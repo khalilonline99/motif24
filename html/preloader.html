@@ -285,7 +285,8 @@
                 .set(".initial-loading-text", { display: 'none' })
                 .set(".scribbles_lines svg", { display: 'none' })
                 .to(".preloader", { display: "none" })
-                .to("body", { overflow: "auto", onComplete: loadHomepageAnimations });
+                // .to("body", { overflow: "auto", onComplete: loadHomepageAnimations });
+                .to("body", { overflow: "auto" , onComplete: loadHomepageAnimations });
 
 
         } else {
@@ -319,7 +320,11 @@
                 .to(".scribbles_lines svg", { display: 'none', opacity: 0 })
                 .to(".preloader", { display: "none" })
                 // .to("body", { overflow: "auto", onComplete: loadHomepageAnimations });
-                .to("body", { overflow: "auto" });
+                .to("body", { overflow: "auto" , onComplete: loadHomepageAnimations });
+        }
+
+        function loadHomepageAnimation () {
+            localStorage.setItem('loadingScreen', 1);
         }
 
         // function loadPageSpecificScripts() {

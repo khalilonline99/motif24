@@ -1,7 +1,8 @@
 window.onload = function () {
+    const checkLoadingComplete = localStorage.getItem("loadingScreen");
+    if (checkLoadingComplete == 1) {
 
-
-    //function loadHomepageAnimations() {
+        //function loadHomepageAnimations() {
 
         //	-----LENIS start
         const lenis = new Lenis({
@@ -976,5 +977,7 @@ window.onload = function () {
 
 
         // loadHomepageAnimations Ends
-    //}
+        //}
+    }
+
 }
