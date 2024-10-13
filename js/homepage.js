@@ -241,17 +241,24 @@ window.onload = function () {
                 const itemToGetMargin = document.querySelectorAll('.main-hero .e-con-inner');
                 const StyleToGetMarginValue = getComputedStyle(itemToGetMargin[0]);
                 const itemLeftMargin = StyleToGetMarginValue.marginLeft;
-                const portfolioSlider = document.querySelector(".portfolio__slider .swiper-portfolio");
-                // const itemToGetMargin = document.querySelectorAll('.e-con-inner');
-                // const StyleToGetMarginValue = getComputedStyle(itemToGetMargin[11]);
-                // const itemLeftMargin = StyleToGetMarginValue.marginLeft;
-                // const portfolioSlider = document.querySelector(".portfolio__slider .swiper-portfolio");
+                const portfolioSlider = document.querySelector(".portfolio__slider");
 
                 //--- Adding padding to the start of portfolio-----//
 
                 const portfolioTimeline = gsap.timeline();
 
                 // Portfolio images reveal from small to large size
+                portfolioTimeline.fromTo(".portfolio__slider",
+                    {opacity: 0},
+                    {
+                        duration: 1.5,
+                        opacity: 1,
+                        scrollTrigger: {
+                            trigger: ".portfolio__slider",
+                            toggleActions: "play complete none none"
+                        }
+                    }
+                )
                 portfolioTimeline.fromTo(".portfolio_single_image",
                     {
                         width: isDesktop ? "0vw" : "60vw",
