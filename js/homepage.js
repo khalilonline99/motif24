@@ -20,13 +20,11 @@ window.onload = function () {
 
         // ======GSAP started from here ====== //
 
-        gsap.registerPlugin(SplitText, ScrollTrigger, CustomEase, 
-            ScrollSmoother
-        );
-        ScrollSmoother.create({
-            smooth: 1,
-            effects: true,
-          });
+        gsap.registerPlugin(SplitText, ScrollTrigger, CustomEase);
+        // ScrollSmoother.create({
+        //     smooth: 1,
+        //     effects: true,
+        //   });
         let mm = gsap.matchMedia();
         mm.add(
             {
