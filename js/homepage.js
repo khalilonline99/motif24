@@ -565,6 +565,7 @@ window.onload = function () {
                 }
 
                 // buttonAnimation(".buttonAnimate", 1.5, 0.2, "power1.inOut", ".buttonAnimate", "top bottom", "+=150");
+                
                 gsap.from(".buttonAnimate", {
                     delay: 0.8,
                     duration: 1.5,
