@@ -585,6 +585,7 @@ window.onload = function () {
                 const imgWhyUsSections = gsap.utils.toArray(".img-why-us");
                 imgWhyUsSections.forEach((imgWhyUsSection) => {
                     gsap.from(imgWhyUsSection, {
+                        delay: 1,
                         opacity: 0,
                         ease: 'power1.inOut',
                         scrollTrigger: {
