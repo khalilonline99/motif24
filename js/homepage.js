@@ -497,7 +497,7 @@ window.onload = function () {
 
                 // lineAnimationfromLeft('.border-line-from-left', 1.2, 0.5, "top bottom");
                 gsap.to('.border-line-from-left', {
-                    duration: duration,
+                    duration: 1.2,
                     delay: 0,
                     autoAlpha: 1,
                     opacity: 1,
