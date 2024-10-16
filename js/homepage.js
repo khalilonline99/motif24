@@ -437,8 +437,8 @@ window.onload = function () {
                     ".opacity-anim",
                     1.2,
                     "power4.out",
-                    isDesktop ? 'top 50%' : 'top 50%',
-                    isDesktop ? '+=300' : '+=200',
+                    isDesktop ? 'top bottom' : 'top 50%',
+                    isDesktop ? '+=200' : '+=200',
                     false,
                     "play play none none"
                 );
@@ -518,10 +518,10 @@ window.onload = function () {
                 scrubOpacityAnimation(
                     '.p-animation',
                     0,
-                    2.5,
+                    1.8,
                     0.2,
                     "power1.inOut",
-                    "top center",
+                    "top bottom",
                     "+=200",
                 );
 
