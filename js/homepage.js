@@ -493,7 +493,22 @@ window.onload = function () {
                     -200
                 );
 
-                lineAnimationfromLeft('.border-line-from-left', 1.2, 0.5, "top bottom");
+                // lineAnimationfromLeft('.border-line-from-left', 1.2, 0.5, "top bottom");
+                gsap.to('.border-line-from-left', {
+                    duration: duration,
+                    delay: 0,
+                    autoAlpha: 1,
+                    opacity: 1,
+                    scale: 1,
+                    ease: "power1.inOut",
+                    scrollTrigger: {
+                        trigger: '.border-line-from-left',
+                        start: isDesktop ? "top bottom": 'top 55%',
+                        end: isDesktop ? '+=150' : '+=150',
+                        scrub: false,
+                        toggleActions: 'play play none none'
+                    },
+                });
 
 
                 // paragraph scrub opacity animation
