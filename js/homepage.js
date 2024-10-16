@@ -202,7 +202,7 @@ window.onload = function () {
                         trigger: '.portfolio-full-container',
                         start: isDesktop ? "top 90%" : "20px 40%",
                         end: "+=200",
-                        scrub: true,
+                        scrub: false,
                     },
                 })
 
@@ -281,7 +281,7 @@ window.onload = function () {
                             trigger: ".portfolio__image",
                             start: isDesktop ? "top bottom" : "20px 40%",
                             end: "+=400",
-                            scrub: true,
+                            scrub: false,
                             markers: false,
                             toggleActions: "play complete none none"
                         }
@@ -298,7 +298,7 @@ window.onload = function () {
                             trigger: ".swiper-portfolio",
                             start: isDesktop ? "top bottom" : "20px 40%",
                             end: "+=400",
-                            scrub: true,
+                            scrub: false,
                             markers: false,
                             toggleActions: "play complete none none"
                         }
@@ -321,7 +321,7 @@ window.onload = function () {
                                 trigger: ".swiper-portfolio",
                                 start: isDesktop ? "top 70%" : "20px 40%",
                                 end: "+=350",
-                                scrub: true,
+                                scrub: false,
                                 markers: false,
                                 toggleActions: "play complete none none"
                             }
@@ -348,7 +348,7 @@ window.onload = function () {
                             },
                             scrollTrigger: {
                                 trigger: revealTwoAnim,
-                                scrub: true,
+                                scrub: false,
                             },
                         }, "+=2");
                     })
@@ -367,7 +367,7 @@ window.onload = function () {
                         duration: 1.1,
                         scrollTrigger: {
                             trigger: line,
-                            scrub: true,
+                            scrub: false,
                         },
                         scale: 1,
                         ease: "power3.out",
@@ -382,7 +382,7 @@ window.onload = function () {
                     ease: "power3.out",
                     scrollTrigger: {
                         trigger: '.border-line-btm-left',
-                        scrub: true,
+                        scrub: false,
                         markers: false,
                         // start: isDesktop ? "top 50%" : "top 50%",
                         // end: isDesktop ? "+=100px" : "+=200px",
@@ -406,7 +406,7 @@ window.onload = function () {
                                 trigger: className,
                                 start: isDesktop ? (startTime || 'top 50%' ): 'top 55%',
                                 end: isDesktop ? '+=150' : '+=150',
-                                scrub: true,
+                                scrub: false,
                                 toggleActions: 'play play none none'
                             },
                         });
@@ -466,7 +466,7 @@ window.onload = function () {
                             trigger: className,
                             start: startVal,
                             end: endVal,
-                            scrub: true
+                            scrub: false
                         }
                     });
                     gsap.from(heroSplitLines.lines, {
@@ -479,7 +479,7 @@ window.onload = function () {
                             trigger: className,
                             start: startVal,
                             end: endVal,
-                            scrub: true
+                            scrub: false
                         }
                     });
                 }
@@ -507,7 +507,7 @@ window.onload = function () {
                         trigger: '.border-line-from-left',
                         start: isDesktop ? "top bottom": 'top 55%',
                         end: isDesktop ? '+=150' : '+=150',
-                        scrub: true,
+                        scrub: false,
                         toggleActions: 'play play none none'
                     },
                 });
@@ -526,7 +526,7 @@ window.onload = function () {
                             trigger: heroSplitLines.lines,
                             start: startVal,
                             end: endVal,
-                            scrub: true,
+                            scrub: false,
                             markers: false
                         }
                     });
@@ -558,7 +558,7 @@ window.onload = function () {
                             trigger: trigger,
                             start: startPosition,
                             end: endPosition,
-                            scrub: true,
+                            scrub: false,
                             markers: false,
                         }
                     })
@@ -575,7 +575,7 @@ window.onload = function () {
                         trigger: ".buttonAnimate",
                         start: "top bottom",
                         end: "+=150",
-                        scrub: true,
+                        scrub: false,
                         markers: false,
                     }
                 })
@@ -592,7 +592,7 @@ window.onload = function () {
                             trigger: imgWhyUsSection,
                             start: isDesktop ? 'top bottom' : 'top 40%',
                             end: isDesktop ? '+=250' : '+=200',
-                            scrub: true,
+                            scrub: false,
                             markers: false,
                             toggleActions: 'play play none none'
                         }
@@ -609,7 +609,7 @@ window.onload = function () {
                         trigger: ".stamp_hm_1",
                         start: isDesktop ? "top 35%" : "top 50%",
                         end: "=+200",
-                        scrub: true,
+                        scrub: false,
                         markers: false,
                         toggleActions: 'play play reverse reverse'
                     }
@@ -734,7 +734,7 @@ window.onload = function () {
                         trigger: ".stamp_hm_2",
                         start: isDesktop ? "top 65%" : "top 50%",
                         end: "=+150",
-                        scrub: true,
+                        scrub: false,
                         markers: false,
                         toggleActions: 'play play reverse reverse'
                     }
@@ -765,7 +765,7 @@ window.onload = function () {
                             trigger: statComponent,
                             start: isDesktop ? 'top 45%' : 'top 50%',
                             end: isDesktop ? '+=200' : '+=200',
-                            scrub: true,
+                            scrub: false,
                             markers: false,
                             toggleActions: 'play play none none'
                         }
@@ -848,7 +848,7 @@ window.onload = function () {
                     pin: true,
                     anticipatePin: 1,
                     // scrub: isDesktop ? 1 : 2,
-                    scrub: true,
+                    scrub: false,
                     start: "top top",
                     animation: tlScrollTextChange,
                     end: isDesktop ? "+=500%" : "+=400%",
@@ -870,7 +870,7 @@ window.onload = function () {
                         trigger: '.cta-container',
                         start: isDesktop ? 'top 60%' : 'top 50%',
                         end: isDesktop ? '+=300px' : '+=200',
-                        scrub: true,
+                        scrub: false,
                         markers: false,
                         toggleActions: 'play play none none'
                     }
