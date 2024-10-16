@@ -250,20 +250,20 @@ window.onload = function () {
                 const portfolioTimeline = gsap.timeline();
 
                 // Portfolio images reveal from small to large size
-                portfolioTimeline.fromTo(".portfolio__slider",
-                    {opacity: 0},
-                    {
-                        duration: 1.5,
-                        opacity: 1,
-                        ease: "elastic.out(1,1)",
-                        scrollTrigger: {
-                            trigger: ".portfolio__slider",
-                            start: isDesktop ? "top middle" : "20px 40%",
-                            end: "+=400",
-                            toggleActions: "play complete none none"
-                        }
-                    }
-                )
+                // portfolioTimeline.fromTo(".portfolio__slider",
+                //     {opacity: 0},
+                //     {
+                //         duration: 1.5,
+                //         opacity: 1,
+                //         ease: "elastic.out(1,1)",
+                //         scrollTrigger: {
+                //             trigger: ".portfolio__slider",
+                //             start: isDesktop ? "top middle" : "20px 40%",
+                //             end: "+=400",
+                //             toggleActions: "play complete none none"
+                //         }
+                //     }
+                // )
                 portfolioTimeline.fromTo(".portfolio_single_image",
                     {
                         width: isDesktop ? "0vw" : "60vw",
