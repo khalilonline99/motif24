@@ -268,12 +268,14 @@ window.onload = function () {
                     {
                         width: isDesktop ? "0vw" : "60vw",
                         height: isDesktop ? "0vw" : "",
+                        opacity: 0,
                     },
                     {
                         delay: 0.5,
                         duration: 1.5,
                         width: isDesktop ? "23vw" : "60vw",
                         height: isDesktop ? "27vw" : "",
+                        opacity: 1,
                         ease: "elastic.out(1,1)",
                         scrollTrigger: {
                             trigger: ".portfolio__image",
