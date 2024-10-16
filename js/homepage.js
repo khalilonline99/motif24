@@ -200,6 +200,8 @@ window.onload = function () {
                     ease: "power4.out",
                     scrollTrigger: {
                         trigger: '.portfolio-full-container',
+                        start: isDesktop ? "top 90%" : "20px 40%",
+                        end: "+=200",
                         scrub: false,
                     },
                 })
@@ -388,7 +390,7 @@ window.onload = function () {
 
 
                 // 		Line reveal from left
-                const lineAnimationfromLeft = (className, duration, delay) => {
+                const lineAnimationfromLeft = (className, duration, delay, startTime) => {
                     const leftLinesAnims = gsap.utils.toArray(className);
                     leftLinesAnims.forEach((leftLinesanim) => {
                         gsap.to(leftLinesanim, {
@@ -400,11 +402,10 @@ window.onload = function () {
                             ease: "power4.out",
                             scrollTrigger: {
                                 trigger: className,
-                                start: isDesktop ? 'top 50%' : 'top 55%',
+                                start: isDesktop ? (startTime || 'top 50%' ): 'top 55%',
                                 end: isDesktop ? '+=150' : '+=150',
                                 scrub: false,
-                                toggleActions: 'play play none none',
-                                markers: true
+                                toggleActions: 'play play none none'
                             },
                         });
                     });
@@ -492,7 +493,7 @@ window.onload = function () {
                     -200
                 );
 
-                lineAnimationfromLeft('.border-line-from-left', 1.2, 0.5);
+                lineAnimationfromLeft('.border-line-from-left', 1.2, 0.5, "top bottom");
 
 
                 // paragraph scrub opacity animation
