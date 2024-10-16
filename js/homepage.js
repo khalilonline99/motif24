@@ -564,7 +564,21 @@ window.onload = function () {
                     })
                 }
 
-                buttonAnimation(".buttonAnimate", 1.5, 0.2, "power1.inOut", ".buttonAnimate", "top bottom", "+=150");
+                // buttonAnimation(".buttonAnimate", 1.5, 0.2, "power1.inOut", ".buttonAnimate", "top bottom", "+=150");
+                gsap.from(".buttonAnimate", {
+                    duration: 1.5,
+                    delay: 0,
+                    autoAlpha: 0,
+                    opacity: 1,
+                    ease: "power1.inOut",
+                    scrollTrigger: {
+                        trigger: ".buttonAnimate",
+                        start: "top bottom",
+                        end: "+=150",
+                        scrub: false,
+                        markers: false,
+                    }
+                })
 
 
                 // Image why us animation
