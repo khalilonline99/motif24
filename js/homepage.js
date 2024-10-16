@@ -484,10 +484,10 @@ window.onload = function () {
 
                 splitHeadingOne(
                     ".large-text-split-2",
-                    2.5,
-                    0.1,
+                    1.8,
+                    0.2,
                     'power1.inOut',
-                    "top center",
+                    "top bottom",
                     "+=150",
                     -200
                 );
