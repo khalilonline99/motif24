@@ -197,7 +197,7 @@ window.onload = function () {
                 gsap.from('.portfolio-full-container', {
                     opacity: 0,
                     delay: 0.8,
-                    ease: "power4.out",
+                    ease: "power1.inOut",
                     scrollTrigger: {
                         trigger: '.portfolio-full-container',
                         start: isDesktop ? "top 90%" : "20px 40%",
@@ -342,7 +342,7 @@ window.onload = function () {
                             duration: animationDuration,
                             autoAlpha: 1,
                             opacity: 1,
-                            ease: "power4.out",
+                            ease: "power1.inOut",
                             stagger: {
                                 amount: 0.4
                             },
@@ -401,7 +401,7 @@ window.onload = function () {
                             autoAlpha: 1,
                             opacity: 1,
                             scale: 1,
-                            ease: "power4.out",
+                            ease: "power1.inOut",
                             scrollTrigger: {
                                 trigger: className,
                                 start: isDesktop ? (startTime || 'top 50%' ): 'top 55%',
@@ -439,7 +439,7 @@ window.onload = function () {
                 opacityAnimation(
                     ".opacity-anim",
                     1.2,
-                    "power4.out",
+                    "power1.inOut",
                     isDesktop ? 'top bottom' : 'top 50%',
                     isDesktop ? '+=200' : '+=200',
                     false,
@@ -586,10 +586,10 @@ window.onload = function () {
                 imgWhyUsSections.forEach((imgWhyUsSection) => {
                     gsap.from(imgWhyUsSection, {
                         opacity: 0,
-                        ease: 'power4.out',
+                        ease: 'power1.inOut',
                         scrollTrigger: {
                             trigger: imgWhyUsSection,
-                            start: isDesktop ? 'top 45%' : 'top 40%',
+                            start: isDesktop ? 'top bottom' : 'top 40%',
                             end: isDesktop ? '+=250' : '+=200',
                             scrub: false,
                             markers: false,
@@ -603,7 +603,7 @@ window.onload = function () {
                 // 	Stamp 1 in image
                 gsap.to(".stamp_hm_1", {
                     opacity: 1,
-                    ease: "power4.out",
+                    ease: "power1.inOut",
                     scrollTrigger: {
                         trigger: ".stamp_hm_1",
                         start: isDesktop ? "top 35%" : "top 50%",
@@ -718,7 +718,7 @@ window.onload = function () {
                 opacityAnimation(
                     ".opacity-anim-3",
                     1.2,
-                    "power4.out",
+                    "power1.inOut",
                     isDesktop ? 'top 45%' : (isTablet ? 'top 50%' : 'top 40%'),
                     isDesktop ? '+=300' : '+=200',
                     false,
@@ -728,7 +728,7 @@ window.onload = function () {
                 // 	Stamp 2 in image
                 gsap.to(".stamp_hm_2", {
                     opacity: 1,
-                    ease: "power4.out",
+                    ease: "power1.inOut",
                     scrollTrigger: {
                         trigger: ".stamp_hm_2",
                         start: isDesktop ? "top 65%" : "top 50%",
@@ -759,7 +759,7 @@ window.onload = function () {
                     gsap.from(statComponent, {
                         duration: 1.1,
                         opacity: 0,
-                        ease: 'power4.out',
+                        ease: 'power1.inOut',
                         scrollTrigger: {
                             trigger: statComponent,
                             start: isDesktop ? 'top 45%' : 'top 50%',
@@ -775,7 +775,7 @@ window.onload = function () {
                 opacityAnimation(
                     ".testimonial__slider2",
                     1.2,
-                    "power4.out",
+                    "power1.inOut",
                     isDesktop ? 'top 60%' : 'top 50%',
                     isDesktop ? '+=300px' : '+=200',
                     false,
@@ -864,7 +864,7 @@ window.onload = function () {
                     autoAlpha: 1,
                     opacity: 1,
                     duration: 1.5,
-                    ease: 'power4.out',
+                    ease: 'power1.inOut',
                     scrollTrigger: {
                         trigger: '.cta-container',
                         start: isDesktop ? 'top 60%' : 'top 50%',
