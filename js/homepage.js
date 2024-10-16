@@ -546,7 +546,7 @@ window.onload = function () {
                     })
                 }
 
-                buttonAnimation(".buttonAnimate", 1.5, 0.3, "power1.inOut", ".buttonAnimate", "center 90%", "+=150");
+                buttonAnimation(".buttonAnimate", 1.5, 0.2, "power1.inOut", ".buttonAnimate", "top bottom", "+=150");
 
 
                 // Image why us animation
