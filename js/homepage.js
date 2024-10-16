@@ -565,10 +565,10 @@ window.onload = function () {
                 }
 
                 // buttonAnimation(".buttonAnimate", 1.5, 0.2, "power1.inOut", ".buttonAnimate", "top bottom", "+=150");
-                
+
                 gsap.from(".buttonAnimate", {
                     delay: 0.8,
-                    duration: 1.5,
+                    duration: 1.2,
                     autoAlpha: 0,
                     opacity: 1,
                     ease: "power1.inOut",
