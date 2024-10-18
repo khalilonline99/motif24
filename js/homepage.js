@@ -223,11 +223,13 @@ window.onload = function () {
                             spaceBetween: 8,
                             loop: false,
                             mousewheel: false,
+                            slidesOffsetBefore: itemLeftMargin,
                         },
                         1024: {
                             slidesPerView: 4,
                             spaceBetween: 0,
                             loop: false,
+                            slidesOffsetBefore: itemLeftMargin,
                         }
                     }
                 });
