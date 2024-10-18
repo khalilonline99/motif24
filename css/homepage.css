@@ -256,9 +256,9 @@ body::-webkit-scrollbar-thumb {
     margin-left: 0;
 } */
 
-/* .swiper-portfolio .swiper-wrapper .swiper-slide:first-child {
+.swiper-portfolio .swiper-wrapper .swiper-slide:first-child {
      margin-left: 5vw;
-  } */
+  }
   
 
 .swiper-slide-portfolio {
@@ -382,34 +382,6 @@ body::-webkit-scrollbar-thumb {
     padding: 0 0.5rem;
 }
 
-/* .distortion,
-.distortion-2,
-.distortion-3,
-.distortion-4,
-.distortion-5 {
-    width: 18vw;
-    height: 26vw;
-} */
-
-/* .distortion canvas,
-.distortion-2 canvas,
-.distortion-3 canvas,
-.distortion-4 canvas,
-.distortion-5 canvas {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
-/* .distortion canvas:hover,
-.distortion-2 canvas:hover,
-.distortion-3 canvas:hover,
-.distortion-4 canvas:hover,
-.distortion-5 canvas:hover {
-    border-radius: 15px;
-} */
 
 
 .portfolio_single_image:hover {
