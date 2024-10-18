@@ -252,9 +252,14 @@ body::-webkit-scrollbar-thumb {
     opacity: 0;
   } */
 
-.swiper-wrapper>div:first-child {
+/* .swiper-wrapper>div:first-child {
     margin-left: 0;
-}
+} */
+
+/* .swiper-portfolio .swiper-wrapper .swiper-slide:first-child {
+     margin-left: 5vw;
+  } */
+  
 
 .swiper-slide-portfolio {
     /*cursor: url(https://wemotif.com/finalstaging/wp-content/uploads/2023/09/swipe-cursor.svg) 50 50, pointer;*/
