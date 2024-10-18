@@ -194,19 +194,7 @@ window.onload = function () {
                     }
                 })
 
-                gsap.from('.portfolio-full-container', {
-                    opacity: 0,
-                    delay: 0.8,
-                    ease: "power1.inOut",
-                    scrollTrigger: {
-                        trigger: '.portfolio-full-container',
-                        start: isDesktop ? "top 90%" : "20px 40%",
-                        end: "+=200",
-                        scrub: false,
-                    },
-                })
-
-
+                
                 // ===Portfolio reveal animation======= //
 
                 // ========Portfolio swiper Js ========== //
@@ -237,7 +225,17 @@ window.onload = function () {
                     }
                 });
 
-
+                // gsap.from('.portfolio-full-container', {
+                //     opacity: 0,
+                //     delay: 0.8,
+                //     ease: "power1.inOut",
+                //     scrollTrigger: {
+                //         trigger: '.portfolio-full-container',
+                //         start: isDesktop ? "top 90%" : "20px 40%",
+                //         end: "+=200",
+                //         scrub: false,
+                //     },
+                // })
 
 
                 const itemToGetMargin = document.querySelectorAll('.main-hero .e-con-inner');
