@@ -209,7 +209,7 @@ window.onload = function () {
                     pagination: false,
                     navigation: false,
                     spaceBetween: 0,
-                    slidesOffsetBefore: itemLeftMargin,
+                    slidesOffsetBefore: "5vw",
                     slidesPerView: 4,
                     breakpoints: {
                         320: {
