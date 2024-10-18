@@ -222,17 +222,17 @@ window.onload = function () {
                             slidesPerView: 5,
                             spaceBetween: 8,
                             loop: false,
-                            mousewheel: false,
-                            slidesOffsetBefore: itemLeftMargin,
+                            mousewheel: false
                         },
                         1024: {
                             slidesPerView: 4,
                             spaceBetween: 0,
-                            loop: false,
-                            slidesOffsetBefore: itemLeftMargin,
+                            loop: false
                         }
                     }
                 });
+
+                swiper.slideNext();
 
                 // gsap.from('.portfolio-full-container', {
                 //     opacity: 0,
