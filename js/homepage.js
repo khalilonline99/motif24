@@ -232,8 +232,7 @@ window.onload = function () {
                     }
                 });
 
-                swiper.slideNext();
-
+        
                 // gsap.from('.portfolio-full-container', {
                 //     opacity: 0,
                 //     delay: 0.8,
