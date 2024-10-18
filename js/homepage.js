@@ -285,23 +285,23 @@ window.onload = function () {
                         }
                     }
                 )
-                portfolioTimeline.fromTo(
-                    ".swiper-portfolio",
-                    { paddingLeft: 0 },
-                    {
-                        paddingLeft: itemLeftMargin,
-                        autoAlpha: 1,
-                        ease: "elastic.out(1,1)",
-                        scrollTrigger: {
-                            trigger: ".swiper-portfolio",
-                            start: isDesktop ? "top bottom" : "20px 40%",
-                            end: "+=400",
-                            scrub: false,
-                            markers: false,
-                            toggleActions: "play complete none none"
-                        }
-                    }
-                )
+                // portfolioTimeline.fromTo(
+                //     ".swiper-portfolio",
+                //     { paddingLeft: 0 },
+                //     {
+                //         paddingLeft: itemLeftMargin,
+                //         autoAlpha: 1,
+                //         ease: "elastic.out(1,1)",
+                //         scrollTrigger: {
+                //             trigger: ".swiper-portfolio",
+                //             start: isDesktop ? "top bottom" : "20px 40%",
+                //             end: "+=400",
+                //             scrub: false,
+                //             markers: false,
+                //             toggleActions: "play complete none none"
+                //         }
+                //     }
+                // )
 
 
 
