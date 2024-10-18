@@ -198,12 +198,19 @@ window.onload = function () {
                 // ===Portfolio reveal animation======= //
 
                 // ========Portfolio swiper Js ========== //
+
+                const itemToGetMargin = document.querySelectorAll('.main-hero .e-con-inner');
+                const StyleToGetMarginValue = getComputedStyle(itemToGetMargin[0]);
+                const itemLeftMargin = StyleToGetMarginValue.marginLeft;
+                const portfolioSlider = document.querySelector(".portfolio__slider");
+
                 const swiper = new Swiper('.swiper-portfolio', {
                     direction: "horizontal",
                     pagination: false,
                     navigation: false,
                     spaceBetween: 0,
-                    slidesOffsetBefore: 350,
+                    slidesOffsetBefore: itemLeftMargin,
+                    slidesOffsetAfter: 100,
                     slidesPerView: 4,
                     breakpoints: {
                         320: {
@@ -236,12 +243,7 @@ window.onload = function () {
                 //         scrub: false,
                 //     },
                 // })
-
-
-                const itemToGetMargin = document.querySelectorAll('.main-hero .e-con-inner');
-                const StyleToGetMarginValue = getComputedStyle(itemToGetMargin[0]);
-                const itemLeftMargin = StyleToGetMarginValue.marginLeft;
-                const portfolioSlider = document.querySelector(".portfolio__slider");
+                
 
                 //--- Adding padding to the start of portfolio-----//
 
