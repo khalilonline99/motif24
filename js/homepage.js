@@ -195,7 +195,7 @@ window.onload = function () {
                 })
 
                 
-                // ===Portfolio reveal animation======= //
+                // ===Portfolio reveal animation======= // 
 
                 // ========Portfolio swiper Js ========== //
 
