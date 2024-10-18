@@ -202,6 +202,7 @@ window.onload = function () {
                 const itemToGetMargin = document.querySelectorAll('.main-hero .e-con-inner');
                 const StyleToGetMarginValue = getComputedStyle(itemToGetMargin[0]);
                 const itemLeftMargin = StyleToGetMarginValue.marginLeft;
+                console.log(itemLeftMargin)
                 const portfolioSlider = document.querySelector(".portfolio__slider");
 
                 const swiper = new Swiper('.swiper-portfolio', {
@@ -209,7 +210,7 @@ window.onload = function () {
                     pagination: false,
                     navigation: false,
                     spaceBetween: 0,
-                    slidesOffsetBefore: "5vw",
+                    slidesOffsetBefore: 100,
                     slidesPerView: 4,
                     breakpoints: {
                         320: {
@@ -288,25 +289,7 @@ window.onload = function () {
                         }
                     }
                 )
-                // portfolioTimeline.fromTo(
-                //     ".swiper-portfolio",
-                //     { paddingLeft: 0 },
-                //     {
-                //         paddingLeft: itemLeftMargin,
-                //         autoAlpha: 1,
-                //         ease: "elastic.out(1,1)",
-                //         scrollTrigger: {
-                //             trigger: ".swiper-portfolio",
-                //             start: isDesktop ? "top bottom" : "20px 40%",
-                //             end: "+=400",
-                //             scrub: false,
-                //             markers: false,
-                //             toggleActions: "play complete none none"
-                //         }
-                //     }
-                // )
-
-
+                
 
 
                 //-- Adding padding in front portfolio after resize of window
@@ -330,7 +313,7 @@ window.onload = function () {
                     )
                 }, true);
 
-                // portfolio end
+                //------------ portfolio end
 
 
 
