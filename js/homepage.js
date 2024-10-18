@@ -265,29 +265,29 @@ window.onload = function () {
                 //         }
                 //     }
                 // )
-                portfolioTimeline.fromTo(".portfolio_single_image",
-                    {
-                        width: isDesktop ? "0vw" : "60vw",
-                        height: isDesktop ? "0vw" : "",
-                        opacity: 0,
-                    },
-                    {
-                        delay: 0.5,
-                        duration: 1.5,
-                        width: isDesktop ? "23vw" : "60vw",
-                        height: isDesktop ? "27vw" : "",
-                        opacity: 1,
-                        ease: "elastic.out(1,1)",
-                        scrollTrigger: {
-                            trigger: ".portfolio__image",
-                            start: isDesktop ? "top bottom" : "20px 40%",
-                            end: "+=400",
-                            scrub: false,
-                            markers: false,
-                            toggleActions: "play complete none none"
-                        }
-                    }
-                )
+                // portfolioTimeline.fromTo(".portfolio_single_image",
+                //     {
+                //         width: isDesktop ? "0vw" : "60vw",
+                //         height: isDesktop ? "0vw" : "",
+                //         opacity: 0,
+                //     },
+                //     {
+                //         delay: 0.5,
+                //         duration: 1.5,
+                //         width: isDesktop ? "23vw" : "60vw",
+                //         height: isDesktop ? "27vw" : "",
+                //         opacity: 1,
+                //         ease: "elastic.out(1,1)",
+                //         scrollTrigger: {
+                //             trigger: ".portfolio__image",
+                //             start: isDesktop ? "top bottom" : "20px 40%",
+                //             end: "+=400",
+                //             scrub: false,
+                //             markers: false,
+                //             toggleActions: "play complete none none"
+                //         }
+                //     }
+                // )
                 
 
 
