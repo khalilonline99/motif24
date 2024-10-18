@@ -202,7 +202,7 @@ window.onload = function () {
                 const itemToGetMargin = document.querySelectorAll('.main-hero .e-con-inner');
                 const StyleToGetMarginValue = getComputedStyle(itemToGetMargin[0]);
                 const itemLeftMargin = StyleToGetMarginValue.marginLeft;
-                console.log(itemLeftMargin)
+                console.log("the gap is",itemLeftMargin)
                 const portfolioSlider = document.querySelector(".portfolio__slider");
 
                 const swiper = new Swiper('.swiper-portfolio', {
