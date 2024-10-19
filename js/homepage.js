@@ -422,15 +422,14 @@ window.onload = function () {
                     },
                 })
                 whatWeDoSection.to(".large-text-split-2", {
-                    duration: 1,
+                    duration: 1.2,
                     opacity: 1,
                     autoAlpha: 1,
-                    stagger: 0.2,
                     ease: "power1.inOut",
                     scrollTrigger: {
                         trigger: ".large-text-split-2",
                         start: isDesktop ? 'top 90%' : 'top bottom',
-                        end: isDesktop ? '+=150' : '+=150',
+                        end: isDesktop ? '+=250' : '+=150',
                         scrub: false,
                         toggleActions: 'play play none none'
                     }
@@ -444,7 +443,7 @@ window.onload = function () {
                     scrollTrigger: {
                         trigger: ".large-text-split-2",
                         start: isDesktop ? 'top 90%' : 'top bottom',
-                        end: isDesktop ? '+=150' : '+=150',
+                        end: isDesktop ? '+=350' : '+=150',
                         scrub: false,
                         toggleActions: 'play play none none'
                     },
