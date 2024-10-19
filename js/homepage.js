@@ -408,7 +408,7 @@ window.onload = function () {
 
                 whatWeDoSection.to(".opacity-anim", {
                     delay: 0,
-                    duration: 0.6,
+                    duration: 1.2,
                     autoAlpha: 1,
                     opacity: 1,
                     scale: 1,
@@ -421,11 +421,25 @@ window.onload = function () {
                         toggleActions: 'play play none none'
                     },
                 })
+                whatWeDoSection.to(".large-text-split-2", {
+                    opacity: 1,
+                    autoAlpha: 1,
+                    duration: 1,
+                    stagger: 0.2,
+                    ease: "power1.inOut",
+                    scrollTrigger: {
+                        trigger: ".large-text-split-2",
+                        start: isDesktop ? 'top 90%' : 'top bottom',
+                        end: isDesktop ? '+=150' : '+=150',
+                        scrub: false,
+                        toggleActions: 'play play none none'
+                    }
+                });
                 whatWeDoSection.from(whatWeDoheroSplitLines.lines, {
                     delay: 0,
                     duration: 1.2,
                     autoAlpha: 1,
-                    opacity: 1,
+                    opacity: 0,
                     yPercent: -200,
                     stagger: 0.2,
                     ease: "power1.inOut",
