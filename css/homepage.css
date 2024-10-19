@@ -513,6 +513,7 @@ body::-webkit-scrollbar-thumb {
 
 .p-animation,
 .p-animation-2 {
+    opacity: 0;
     font-kerning: none;
     color: #848484;
     /* color: white; */

@@ -178,6 +178,10 @@ window.onload = function () {
                     ease: "expo.out"
                 })
 
+
+
+
+
                 // As seen on logo animation
                 const logoImages = gsap.utils.toArray(".logo-image");
 
@@ -194,7 +198,64 @@ window.onload = function () {
                     }
                 })
 
-                
+                //-- Reveal Lines as seen on 1
+                const rightLines = gsap.utils.toArray('.border-line-top-right');
+                rightLines.forEach((line) => {
+                    gsap.to(line, {
+                        duration: 1.1,
+                        scrollTrigger: {
+                            trigger: line,
+                            scrub: false,
+                        },
+                        scale: 1,
+                        ease: "power3.out",
+                    });
+                });
+
+                // Reveal Lines as seen on 2
+                gsap.to('.border-line-btm-left', {
+                    duration: 1.1,
+                    scale: 1,
+                    ease: "power3.out",
+                    scrollTrigger: {
+                        trigger: '.border-line-btm-left',
+                        scrub: false,
+                        markers: false,
+                        // start: isDesktop ? "top 50%" : "top 50%",
+                        // end: isDesktop ? "+=100px" : "+=200px",
+                    },
+                });
+
+
+                // Fade in function for class used in different components
+                const fadeInClassMultiple = (className, delayValue, animationDuration) => {
+                    const revealTwoAnims = gsap.utils.toArray(className);
+                    revealTwoAnims.forEach((revealTwoAnim) => {
+                        gsap.to(revealTwoAnim, {
+                            delay: delayValue,
+                            duration: animationDuration,
+                            autoAlpha: 1,
+                            opacity: 1,
+                            ease: "power1.inOut",
+                            stagger: {
+                                amount: 0.4
+                            },
+                            scrollTrigger: {
+                                trigger: revealTwoAnim,
+                                scrub: false,
+                            },
+                        }, "+=2");
+                    })
+                }
+
+                fadeInClassMultiple(".reveal-as-seen-on-logo", 1.5, 1.8); //as seen on logo
+                fadeInClassMultiple(".logos-slide", 0.2, 1.8);
+
+
+
+
+
+
                 // ===Portfolio reveal animation======= // 
 
                 // ========Portfolio swiper Js ========== //
@@ -202,7 +263,7 @@ window.onload = function () {
                 const itemToGetMargin = document.querySelectorAll('.main-hero .e-con-inner');
                 const StyleToGetMarginValue = getComputedStyle(itemToGetMargin[0]);
                 const itemLeftMargin = StyleToGetMarginValue.marginLeft;
-                console.log("the gap is",itemLeftMargin)
+                console.log("the gap is", itemLeftMargin)
                 const portfolioSlider = document.querySelector(".portfolio__slider");
 
                 const swiper = new Swiper('.swiper-portfolio', {
@@ -232,19 +293,6 @@ window.onload = function () {
                     }
                 });
 
-        
-                // gsap.from('.portfolio-full-container', {
-                //     opacity: 0,
-                //     delay: 0.8,
-                //     ease: "power1.inOut",
-                //     scrollTrigger: {
-                //         trigger: '.portfolio-full-container',
-                //         start: isDesktop ? "top 90%" : "20px 40%",
-                //         end: "+=200",
-                //         scrub: false,
-                //     },
-                // })
-                
 
                 //--- Adding padding to the start of portfolio-----//
 
@@ -288,7 +336,7 @@ window.onload = function () {
                 //         }
                 //     }
                 // )
-                
+
 
 
                 //-- Adding padding in front portfolio after resize of window
@@ -315,62 +363,10 @@ window.onload = function () {
                 //------------ portfolio end
 
 
-
-                // Fade in function for class used in different components
-                const fadeInClassMultiple = (className, delayValue, animationDuration) => {
-                    const revealTwoAnims = gsap.utils.toArray(className);
-                    revealTwoAnims.forEach((revealTwoAnim) => {
-                        gsap.to(revealTwoAnim, {
-                            delay: delayValue,
-                            duration: animationDuration,
-                            autoAlpha: 1,
-                            opacity: 1,
-                            ease: "power1.inOut",
-                            stagger: {
-                                amount: 0.4
-                            },
-                            scrollTrigger: {
-                                trigger: revealTwoAnim,
-                                scrub: false,
-                            },
-                        }, "+=2");
-                    })
-                }
-
-                fadeInClassMultiple(".reveal-as-seen-on-logo", 1.5, 1.8); //as seen on logo
-                fadeInClassMultiple(".reveal-two", 0.2, 1.8); //as seen on logo
                 fadeInClassMultiple(".motif-badge-container", 0.1, 1.8);
-                fadeInClassMultiple(".logos-slide", 0.2, 1.8);
 
 
-                //-- Reveal Lines as seen on 1
-                const rightLines = gsap.utils.toArray('.border-line-top-right');
-                rightLines.forEach((line) => {
-                    gsap.to(line, {
-                        duration: 1.1,
-                        scrollTrigger: {
-                            trigger: line,
-                            scrub: false,
-                        },
-                        scale: 1,
-                        ease: "power3.out",
-                    });
-                });
 
-                // Reveal Lines as seen on 2
-                // Const leftLines = gsap.utils.toArray('.border-line-btm-left');
-                gsap.to('.border-line-btm-left', {
-                    duration: 1.1,
-                    scale: 1,
-                    ease: "power3.out",
-                    scrollTrigger: {
-                        trigger: '.border-line-btm-left',
-                        scrub: false,
-                        markers: false,
-                        // start: isDesktop ? "top 50%" : "top 50%",
-                        // end: isDesktop ? "+=100px" : "+=200px",
-                    },
-                });
 
 
 
@@ -387,7 +383,7 @@ window.onload = function () {
                             ease: "power1.inOut",
                             scrollTrigger: {
                                 trigger: className,
-                                start: isDesktop ? (startTime || 'top 50%' ): 'top 55%',
+                                start: isDesktop ? (startTime || 'top 50%') : 'top 55%',
                                 end: isDesktop ? '+=150' : '+=150',
                                 scrub: false,
                                 toggleActions: 'play play none none'
@@ -395,6 +391,96 @@ window.onload = function () {
                         });
                     });
                 }
+
+
+
+                // what we do section with gsap timeline
+                const whatWeDoSection = gsap.timeline();
+                const whatWeDoheroSplitLines = new SplitType(".large-text-split-2", { types: 'lines' });
+                const whatWeDoheroHeadingLines = document.querySelectorAll(".large-text-split-2 .line");
+                whatWeDoheroHeadingLines.forEach(function (line) {
+                    const wrapper = document.createElement("div");
+                    wrapper.classList.add("hero-line-wrapper");
+                    line.parentNode.insertBefore(wrapper, line);
+                    wrapper.appendChild(line);
+                });
+
+
+                whatWeDoSection.to(".opacity-anim", {
+                    delay: 0,
+                    duration: 0.6,
+                    autoAlpha: 1,
+                    opacity: 1,
+                    scale: 1,
+                    ease: "power1.inOut",
+                    scrollTrigger: {
+                        trigger: ".opacity-anim",
+                        start: isDesktop ? 'top 90%' : 'top bottom',
+                        end: isDesktop ? '+=150' : '+=150',
+                        scrub: false,
+                        toggleActions: 'play play none none'
+                    },
+                })
+                whatWeDoSection.to(whatWeDoheroSplitLines.lines, {
+                    delay: 0,
+                    duration: 1.2,
+                    autoAlpha: 1,
+                    opacity: 1,
+                    yPercent: -200,
+                    stagger: 0.2,
+                    ease: "power1.inOut",
+                    scrollTrigger: {
+                        trigger: whatWeDoheroSplitLines,
+                        start: isDesktop ? 'top 90%' : 'top bottom',
+                        end: isDesktop ? '+=150' : '+=150',
+                        scrub: false,
+                        toggleActions: 'play play none none'
+                    },
+                })
+                whatWeDoSection.to( ".border-line-from-left", {
+                    delay: 0,
+                    duration: 1.2,
+                    scale: 1,
+                    opacity: 1,
+                    autoAlpha: 1,
+                    ease: "power1.inOut",
+                    scrollTrigger: {
+                        trigger:  ".border-line-from-left",
+                        start: isDesktop ? 'top 90%' : 'top bottom',
+                        end: isDesktop ? '+=150' : '+=150',
+                        scrub: false,
+                        toggleActions: 'play play none none'
+                    },
+                })
+                whatWeDoSection.to( ".p-animation", {
+                    delay: 0,
+                    duration: 1.2,
+                    opacity: 1,
+                    autoAlpha: 1,
+                    stagger: 0.2,
+                    ease: "power1.inOut",
+                    scrollTrigger: {
+                        trigger:  ".p-animation",
+                        start: isDesktop ? 'top 90%' : 'top bottom',
+                        end: isDesktop ? '+=200' : '+=150',
+                        scrub: false,
+                        toggleActions: 'play play none none'
+                    },
+                })
+                whatWeDoSection.to( ".buttonAnimate", {
+                    delay: 0,
+                    duration: 1.2,
+                    opacity: 1,
+                    autoAlpha: 1,
+                    ease: "power1.inOut",
+                    scrollTrigger: {
+                        trigger:  ".buttonAnimate",
+                        start: isDesktop ? 'top 90%' : 'top bottom',
+                        end: isDesktop ? '+=100' : '+=150',
+                        scrub: false,
+                        toggleActions: 'play play none none'
+                    },
+                })
 
 
 
@@ -419,15 +505,15 @@ window.onload = function () {
                     });
                 }
 
-                opacityAnimation(
-                    ".opacity-anim",
-                    1.2,
-                    "power1.inOut",
-                    isDesktop ? 'top bottom' : 'top 50%',
-                    isDesktop ? '+=200' : '+=200',
-                    false,
-                    "play play none none"
-                );
+                // opacityAnimation(
+                //     ".opacity-anim",
+                //     1.2,
+                //     "power1.inOut",
+                //     isDesktop ? 'top bottom' : 'top 50%',
+                //     isDesktop ? '+=200' : '+=200',
+                //     false,
+                //     "play play none none"
+                // );
 
 
                 const splitHeadingOne = (className, durationVal, staggerVal, easeVal, startVal, endVal, yPercentageVal) => {
@@ -468,27 +554,28 @@ window.onload = function () {
                 }
 
 
-                splitHeadingOne(
-                    ".large-text-split-2",
-                    1.8,
-                    0.2,
-                    'power1.inOut',
-                    "top bottom",
-                    "+=150",
-                    -200
-                );
+                // splitHeadingOne(
+                //     ".large-text-split-2",
+                //     1.8,
+                //     0.2,
+                //     'power1.inOut',
+                //     "top bottom",
+                //     "+=150",
+                //     -200
+                // );
+
 
                 // lineAnimationfromLeft('.border-line-from-left', 1.2, 0.5, "top bottom");
+
                 gsap.to('.border-line-from-left', {
-                    duration: 1.2,
-                    delay: 0,
+                    duration: 0.8,
                     autoAlpha: 1,
                     opacity: 1,
                     scale: 1,
                     ease: "power1.inOut",
                     scrollTrigger: {
                         trigger: '.border-line-from-left',
-                        start: isDesktop ? "top bottom": 'top 55%',
+                        start: isDesktop ? "top bottom" : 'top 55%',
                         end: isDesktop ? '+=150' : '+=150',
                         scrub: false,
                         toggleActions: 'play play none none'
@@ -516,15 +603,15 @@ window.onload = function () {
                 }
 
 
-                scrubOpacityAnimation(
-                    '.p-animation',
-                    0,
-                    1.8,
-                    0.2,
-                    "power1.inOut",
-                    "top bottom",
-                    "+=200",
-                );
+                // scrubOpacityAnimation(
+                //     '.p-animation',
+                //     0,
+                //     1.8,
+                //     0.2,
+                //     "power1.inOut",
+                //     "top bottom",
+                //     "+=200",
+                // );
 
 
 
