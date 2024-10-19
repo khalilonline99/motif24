@@ -422,9 +422,9 @@ window.onload = function () {
                     },
                 })
                 whatWeDoSection.to(".large-text-split-2", {
+                    duration: 1,
                     opacity: 1,
                     autoAlpha: 1,
-                    duration: 1,
                     stagger: 0.2,
                     ease: "power1.inOut",
                     scrollTrigger: {
@@ -448,7 +448,7 @@ window.onload = function () {
                         scrub: false,
                         toggleActions: 'play play none none'
                     },
-                })
+                }, "-=1.5")
                 whatWeDoSection.to( ".border-line-from-left", {
                     delay: 0,
                     duration: 1.5,
