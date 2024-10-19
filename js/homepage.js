@@ -437,11 +437,9 @@ window.onload = function () {
                 });
                 whatWeDoSection.from(whatWeDoheroSplitLines.lines, {
                     delay: 0,
-                    duration: 1.2,
-                    autoAlpha: 1,
-                    opacity: 0,
+                    duration: 1.5,
                     yPercent: -200,
-                    stagger: 0.2,
+                    stagger: 0.3,
                     ease: "power1.inOut",
                     scrollTrigger: {
                         trigger: ".large-text-split-2",
@@ -453,7 +451,7 @@ window.onload = function () {
                 })
                 whatWeDoSection.to( ".border-line-from-left", {
                     delay: 0,
-                    duration: 1.2,
+                    duration: 1.5,
                     scale: 1,
                     opacity: 1,
                     autoAlpha: 1,
