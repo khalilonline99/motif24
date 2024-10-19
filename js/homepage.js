@@ -395,7 +395,6 @@ window.onload = function () {
 
 
                 // what we do section with gsap timeline
-                const whatWeDoSection = gsap.timeline();
                 const whatWeDoheroSplitLines = new SplitType(".large-text-split-2", { types: 'lines' });
                 const whatWeDoheroHeadingLines = document.querySelectorAll(".large-text-split-2 .line");
                 whatWeDoheroHeadingLines.forEach(function (line) {
@@ -404,6 +403,7 @@ window.onload = function () {
                     line.parentNode.insertBefore(wrapper, line);
                     wrapper.appendChild(line);
                 });
+                const whatWeDoSection = gsap.timeline();
 
 
                 whatWeDoSection.to(".opacity-anim", {
@@ -430,7 +430,7 @@ window.onload = function () {
                     stagger: 0.2,
                     ease: "power1.inOut",
                     scrollTrigger: {
-                        trigger: whatWeDoheroSplitLines,
+                        trigger: ".large-text-split-2",
                         start: isDesktop ? 'top 90%' : 'top bottom',
                         end: isDesktop ? '+=150' : '+=150',
                         scrub: false,
