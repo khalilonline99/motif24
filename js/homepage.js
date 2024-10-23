@@ -416,7 +416,7 @@ window.onload = function () {
                     scrollTrigger: {
                         trigger: ".opacity-anim",
                         start: isDesktop ? 'top 90%' : 'top bottom',
-                        end: isDesktop ? '+=150' : '+=150',
+                        end: isDesktop ? '+=300' : '+=150',
                         scrub: false,
                         toggleActions: 'play play none none'
                     },
@@ -429,7 +429,7 @@ window.onload = function () {
                     scrollTrigger: {
                         trigger: ".large-text-split-2",
                         start: isDesktop ? 'top 90%' : 'top bottom',
-                        end: isDesktop ? '+=250' : '+=150',
+                        end: isDesktop ? '+=300' : '+=150',
                         scrub: false,
                         toggleActions: 'play play none none'
                     }
@@ -458,7 +458,7 @@ window.onload = function () {
                     scrollTrigger: {
                         trigger:  ".border-line-from-left",
                         start: isDesktop ? 'top 90%' : 'top bottom',
-                        end: isDesktop ? '+=150' : '+=150',
+                        end: isDesktop ? '+=300' : '+=150',
                         scrub: false,
                         toggleActions: 'play play none none'
                     },
@@ -473,7 +473,7 @@ window.onload = function () {
                     scrollTrigger: {
                         trigger:  ".p-animation",
                         start: isDesktop ? 'top 90%' : 'top bottom',
-                        end: isDesktop ? '+=200' : '+=150',
+                        end: isDesktop ? '+=300' : '+=150',
                         scrub: false,
                         toggleActions: 'play play none none'
                     },
@@ -487,7 +487,7 @@ window.onload = function () {
                     scrollTrigger: {
                         trigger:  ".buttonAnimate",
                         start: isDesktop ? 'top 90%' : 'top bottom',
-                        end: isDesktop ? '+=100' : '+=150',
+                        end: isDesktop ? '+=300' : '+=150',
                         scrub: false,
                         toggleActions: 'play play none none'
                     },
