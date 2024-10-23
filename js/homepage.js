@@ -413,12 +413,13 @@ window.onload = function () {
                     opacity: 1,
                     scale: 1,
                     ease: "power1.inOut",
+                    stagger: 0.25,
                     scrollTrigger: {
                         trigger: ".opacity-anim",
                         start: isDesktop ? 'top 90%' : 'top bottom',
-                        end: isDesktop ? '+=300' : '+=150',
+                        // end: isDesktop ? '+=300' : '+=150',
                         scrub: false,
-                        toggleActions: 'play play none none'
+                        toggleActions: 'play none none none'
                     },
                 })
                 whatWeDoSection.to(".large-text-split-2", {
@@ -429,23 +430,23 @@ window.onload = function () {
                     scrollTrigger: {
                         trigger: ".large-text-split-2",
                         start: isDesktop ? 'top 90%' : 'top bottom',
-                        end: isDesktop ? '+=300' : '+=150',
+                        // end: isDesktop ? '+=300' : '+=150',
                         scrub: false,
-                        toggleActions: 'play play none none'
+                        toggleActions: 'play none none none'
                     }
                 });
                 whatWeDoSection.from(whatWeDoheroSplitLines.lines, {
                     delay: 0,
                     duration: 1.5,
                     yPercent: -200,
-                    stagger: 0.3,
+                    stagger: 0.25,
                     ease: "power1.inOut",
                     scrollTrigger: {
                         trigger: ".large-text-split-2",
                         start: isDesktop ? 'top 90%' : 'top bottom',
-                        end: isDesktop ? '+=350' : '+=150',
+                        // end: isDesktop ? '+=350' : '+=150',
                         scrub: false,
-                        toggleActions: 'play play none none'
+                        toggleActions: 'play none none none'
                     },
                 }, "-=1.5")
                 whatWeDoSection.to( ".border-line-from-left", {
@@ -458,9 +459,9 @@ window.onload = function () {
                     scrollTrigger: {
                         trigger:  ".border-line-from-left",
                         start: isDesktop ? 'top 90%' : 'top bottom',
-                        end: isDesktop ? '+=300' : '+=150',
+                        // end: isDesktop ? '+=300' : '+=150',
                         scrub: false,
-                        toggleActions: 'play play none none'
+                        toggleActions: 'play none none none'
                     },
                 })
                 whatWeDoSection.to( ".p-animation", {
@@ -468,14 +469,14 @@ window.onload = function () {
                     duration: 1.2,
                     opacity: 1,
                     autoAlpha: 1,
-                    stagger: 0.2,
+                    stagger: 0.25,
                     ease: "power1.inOut",
                     scrollTrigger: {
                         trigger:  ".p-animation",
                         start: isDesktop ? 'top 90%' : 'top bottom',
-                        end: isDesktop ? '+=300' : '+=150',
+                        // end: isDesktop ? '+=300' : '+=150',
                         scrub: false,
-                        toggleActions: 'play play none none'
+                        toggleActions: 'play none none none'
                     },
                 })
                 whatWeDoSection.to( ".buttonAnimate", {
@@ -487,9 +488,9 @@ window.onload = function () {
                     scrollTrigger: {
                         trigger:  ".buttonAnimate",
                         start: isDesktop ? 'top 90%' : 'top bottom',
-                        end: isDesktop ? '+=300' : '+=150',
+                        // end: isDesktop ? '+=300' : '+=150',
                         scrub: false,
-                        toggleActions: 'play play none none'
+                        toggleActions: 'play none none none'
                     },
                 })
 
