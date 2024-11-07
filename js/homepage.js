@@ -820,7 +820,26 @@ window.onload = function () {
                     -200
                 );
 
+                // stat number moving from right and left animation
+                const statTl = gsap.timeline() ;
+                statTl.fromTo("stat-1", {
+                    x: "-100%",    
+                    y: "0px",      
+                    rotation: -45, 
+                  },
+                  {
+                    x: "0px",      
+                    y: "0px",      
+                    rotation: 0,   
+                    duration: 1,   
+                    ease: "power2.out", 
+                  })
+                statTl.fromTo("stat-2", {
 
+                }, 
+                {
+
+                })
 
                 // Stat numbers anims fade in
                 const statComponents = gsap.utils.toArray(".stat-anims");
