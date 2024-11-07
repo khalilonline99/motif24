@@ -831,13 +831,14 @@ window.onload = function () {
                     x: "0px",      
                     y: "0px",      
                     rotation: 0,   
-                    duration: 1,   
+                    duration: 1.2,   
                     ease: "power2.out",
                     scrollTrigger: {
                         trigger: ".stat-1", 
                         start: "top center",        
-                        end: "top center",          
-                        toggleActions: "play none none none" 
+                        end: "top center",     
+                        scrub: true,     
+                        toggleActions: "play play none none" 
                       }
                   })
                 statTl.fromTo("stat-2", {
