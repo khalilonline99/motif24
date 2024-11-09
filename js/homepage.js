@@ -848,6 +848,7 @@ window.onload = function () {
                     {
                         x: "0px",
                         rotation: 0,
+                        delay: 0.5,
                         duration: 1,
                         ease: "power2.out",
                         scrollTrigger: {
