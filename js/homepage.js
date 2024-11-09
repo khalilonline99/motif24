@@ -860,6 +860,44 @@ window.onload = function () {
                             toggleActions: "play play none none"
                         }
                     })
+                    statTl.fromTo(".stat-3", {
+                        x: "-100%",
+                        y: "0px",
+                        rotation: -45,
+                    },
+                        {
+                            x: "0px",
+                            y: "0px",
+                            rotation: 0,
+                            duration: 1.2,
+                            ease: "power2.out",
+                            scrollTrigger: {
+                                trigger: ".stat-1",
+                                start: "top 80%",
+                                end: "top center",
+                                scrub: true,
+                                toggleActions: "play play none none"
+                            }
+                        })
+                        statTl.fromTo("stat-4", {
+                            x: "100%",
+                            y: "0px",
+                            rotation: 45,
+                        },
+                            {
+                                x: "0px",
+                                y: "0px",
+                                rotation: 0,
+                                duration: 1.2,
+                                ease: "power2.out",
+                                scrollTrigger: {
+                                    trigger: ".stat-1",
+                                    start: "top 80%",
+                                    end: "top center",
+                                    scrub: true,
+                                    toggleActions: "play play none none"
+                                }
+                            })
 
                 // Stat numbers anims fade in
                 const statComponents = gsap.utils.toArray(".stat-anims");
