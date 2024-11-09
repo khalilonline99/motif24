@@ -835,7 +835,7 @@ window.onload = function () {
                     ease: "power2.out",
                     scrollTrigger: {
                         trigger: ".stat-1", 
-                        start: "top center",        
+                        start: "top 80%",        
                         end: "top center",     
                         scrub: true,     
                         toggleActions: "play play none none" 
