@@ -853,12 +853,12 @@ window.onload = function () {
                         ease: "power2.out",
                         scrollTrigger: {
                             trigger: ".stat-2",
-                            start: "top 80%",
+                            start: "top 85%",
                             end: "top center",
                             scrub: true,
                             toggleActions: "play play none none"
                         }
-                    }, "+=1")
+                    }, "+=3")
                 .fromTo(".stat-3",
                     {
                         x: "-100%",
@@ -889,12 +889,12 @@ window.onload = function () {
                         ease: "power2.out",
                         scrollTrigger: {
                             trigger: ".stat-4",
-                            start: "top 80%",
+                            start: "top 85%",
                             end: "top center",
                             scrub: true,
                             toggleActions: "play play none none"
                         }
-                    }, "+=1")
+                    }, "+=3")
 
                 // Stat numbers anims fade in
                 const statComponents = gsap.utils.toArray(".stat-anims");
