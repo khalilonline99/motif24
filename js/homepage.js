@@ -262,7 +262,7 @@ window.onload = function () {
 
                 const itemToGetMargin = document.querySelectorAll('.main-hero .e-con-inner');
                 const StyleToGetMarginValue = getComputedStyle(itemToGetMargin[0]);
-                const itemLeftMargin = StyleToGetMarginValue.marginLeft;
+                // const itemLeftMargin = StyleToGetMarginValue.marginLeft;
                 const portfolioSlider = document.querySelector(".portfolio__slider");
 
                 const swiper = new Swiper('.swiper-portfolio', {
@@ -270,7 +270,7 @@ window.onload = function () {
                     pagination: false,
                     navigation: false,
                     spaceBetween: 0,
-                    slidesOffsetBefore: itemLeftMargin,
+                    // slidesOffsetBefore: itemLeftMargin,
                     slidesPerView: 4,
                     breakpoints: {
                         320: {
