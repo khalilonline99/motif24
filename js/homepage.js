@@ -853,7 +853,7 @@ window.onload = function () {
                         duration: 1.2,
                         ease: "power2.out",
                         scrollTrigger: {
-                            trigger: ".stat-1",
+                            trigger: ".stat-2",
                             start: "top 80%",
                             end: "top center",
                             scrub: true,
@@ -872,7 +872,7 @@ window.onload = function () {
                             duration: 1.2,
                             ease: "power2.out",
                             scrollTrigger: {
-                                trigger: ".stat-1",
+                                trigger: ".stat-3",
                                 start: "top 80%",
                                 end: "top center",
                                 scrub: true,
@@ -891,7 +891,7 @@ window.onload = function () {
                                 duration: 1.2,
                                 ease: "power2.out",
                                 scrollTrigger: {
-                                    trigger: ".stat-1",
+                                    trigger: ".stat-4",
                                     start: "top 80%",
                                     end: "top center",
                                     scrub: true,
