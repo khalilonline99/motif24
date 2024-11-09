@@ -263,7 +263,7 @@ body::-webkit-scrollbar-thumb {
     /*cursor: url(https://wemotif.com/finalstaging/wp-content/uploads/2023/09/swipe-cursor.svg) 50 50, pointer;*/
     /*width: 17vw !important;*/
     width: max-content !important;
-    margin-right: 0.4rem;
+    /* margin-right: 0.4rem; */
 }
 
 
