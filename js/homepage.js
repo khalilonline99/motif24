@@ -449,7 +449,7 @@ window.onload = function () {
                         toggleActions: 'play none none none'
                     },
                 }, "-=1.5")
-                whatWeDoSection.to( ".border-line-from-left", {
+                whatWeDoSection.to(".border-line-from-left", {
                     delay: 0,
                     duration: 1.5,
                     scale: 1,
@@ -457,14 +457,14 @@ window.onload = function () {
                     autoAlpha: 1,
                     ease: "power1.inOut",
                     scrollTrigger: {
-                        trigger:  ".border-line-from-left",
+                        trigger: ".border-line-from-left",
                         start: isDesktop ? 'top 90%' : 'top bottom',
                         // end: isDesktop ? '+=300' : '+=150',
                         scrub: false,
                         toggleActions: 'play none none none'
                     },
                 })
-                whatWeDoSection.to( ".p-animation", {
+                whatWeDoSection.to(".p-animation", {
                     delay: 0,
                     duration: 1.2,
                     opacity: 1,
@@ -472,21 +472,21 @@ window.onload = function () {
                     stagger: 0.25,
                     ease: "power1.inOut",
                     scrollTrigger: {
-                        trigger:  ".p-animation",
+                        trigger: ".p-animation",
                         start: isDesktop ? 'top 90%' : 'top bottom',
                         // end: isDesktop ? '+=300' : '+=150',
                         scrub: false,
                         toggleActions: 'play none none none'
                     },
                 })
-                whatWeDoSection.to( ".buttonAnimate", {
+                whatWeDoSection.to(".buttonAnimate", {
                     delay: 0,
                     duration: 1.2,
                     opacity: 1,
                     autoAlpha: 1,
                     ease: "power1.inOut",
                     scrollTrigger: {
-                        trigger:  ".buttonAnimate",
+                        trigger: ".buttonAnimate",
                         start: isDesktop ? 'top 90%' : 'top bottom',
                         // end: isDesktop ? '+=300' : '+=150',
                         scrub: false,
@@ -821,32 +821,45 @@ window.onload = function () {
                 );
 
                 // stat number moving from right and left animation
-                const statTl = gsap.timeline() ;
+                const statTl = gsap.timeline();
                 statTl.fromTo(".stat-1", {
-                    x: "-100%",    
-                    y: "0px",      
-                    rotation: -45, 
-                  },
-                  {
-                    x: "0px",      
-                    y: "0px",      
-                    rotation: 0,   
-                    duration: 1.2,   
-                    ease: "power2.out",
-                    scrollTrigger: {
-                        trigger: ".stat-1", 
-                        start: "top 80%",        
-                        end: "top center",     
-                        scrub: true,     
-                        toggleActions: "play play none none" 
-                      }
-                  })
+                    x: "-100%",
+                    y: "0px",
+                    rotation: -45,
+                },
+                    {
+                        x: "0px",
+                        y: "0px",
+                        rotation: 0,
+                        duration: 1.2,
+                        ease: "power2.out",
+                        scrollTrigger: {
+                            trigger: ".stat-1",
+                            start: "top 80%",
+                            end: "top center",
+                            scrub: true,
+                            toggleActions: "play play none none"
+                        }
+                    })
                 statTl.fromTo("stat-2", {
-
-                }, 
-                {
-
-                })
+                    x: "100%",
+                    y: "0px",
+                    rotation: 45,
+                },
+                    {
+                        x: "0px",
+                        y: "0px",
+                        rotation: 0,
+                        duration: 1.2,
+                        ease: "power2.out",
+                        scrollTrigger: {
+                            trigger: ".stat-1",
+                            start: "top 80%",
+                            end: "top center",
+                            scrub: true,
+                            toggleActions: "play play none none"
+                        }
+                    })
 
                 // Stat numbers anims fade in
                 const statComponents = gsap.utils.toArray(".stat-anims");
