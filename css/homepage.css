@@ -261,7 +261,7 @@ body::-webkit-scrollbar-thumb {
 
 .swiper-slide-portfolio {
     /*cursor: url(https://wemotif.com/finalstaging/wp-content/uploads/2023/09/swipe-cursor.svg) 50 50, pointer;*/
-    /*width: 17vw !important;*/
+    width: 17vw;
     width: max-content;
     /* margin-right: 0.4rem; */
 }
@@ -275,8 +275,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .portfolio__image img {
-    /* max-width: 25em; */
-    /* height: max-content; */
+    max-width: 25em;
+    height: max-content;
     opacity: 1;
     transition: all .5s cubic-bezier(.165, .84, .44, 1);
     height: 30em;
