@@ -261,7 +261,7 @@ window.onload = function () {
                 // ========Portfolio swiper Js ========== //
 
                 const itemToGetMargin = document.querySelectorAll('.main-hero .e-con-inner');
-                const StyleToGetMarginValue = getComputedStyle(itemToGetMargin[0]);
+                // const StyleToGetMarginValue = getComputedStyle(itemToGetMargin[0]);
                 // const itemLeftMargin = StyleToGetMarginValue.marginLeft;
                 const portfolioSlider = document.querySelector(".portfolio__slider");
 
