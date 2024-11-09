@@ -286,7 +286,7 @@ window.onload = function () {
                         },
                         1024: {
                             slidesPerView: 4,
-                            spaceBetween: 0,
+                            spaceBetween: 8,
                             loop: false
                         }
                     }
