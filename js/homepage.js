@@ -821,8 +821,8 @@ window.onload = function () {
                 );
 
                 // stat number moving from right and left animation
-                const statTl = gsap.timeline();
-                statTl.fromTo(".stat-1",
+                const statTl = gsap.timeline()
+                .fromTo(".stat-1",
                     {
                         x: "-100%",
                         rotation: -45,
@@ -840,7 +840,7 @@ window.onload = function () {
                             toggleActions: "play play none none"
                         }
                     })
-                fromTo(".stat-2",
+                .fromTo(".stat-2",
                     {
                         x: "100%",
                         rotation: 45,
@@ -859,7 +859,7 @@ window.onload = function () {
                             toggleActions: "play play none none"
                         }
                     }, "+=1")
-                fromTo(".stat-3",
+                .fromTo(".stat-3",
                     {
                         x: "-100%",
                         rotation: -45,
@@ -877,7 +877,7 @@ window.onload = function () {
                             toggleActions: "play play none none"
                         }
                     }, "+=1")
-                fromTo(".stat-4",
+                .fromTo(".stat-4",
                     {
                         x: "100%",
                         rotation: 45,
