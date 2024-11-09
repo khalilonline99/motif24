@@ -254,9 +254,9 @@ body::-webkit-scrollbar-thumb {
     margin-left: 0;
 } */
 
-.swiper-portfolio .swiper-wrapper .swiper-slide:first-child {
+/* .swiper-portfolio .swiper-wrapper .swiper-slide:first-child {
     margin-left: 13.92vw;
-}
+} */
 
 
 .swiper-slide-portfolio {
@@ -453,9 +453,9 @@ body::-webkit-scrollbar-thumb {
 
 @media only screen and (max-width: 767px) {
 
-    .swiper-portfolio .swiper-wrapper .swiper-slide:first-child {
+    /* .swiper-portfolio .swiper-wrapper .swiper-slide:first-child {
         margin-left: 13.92vw;
-    }
+    } */
 
     .portfolio__slider .swiper-portfolio {
         padding-left: 0;

@@ -263,7 +263,6 @@ window.onload = function () {
                 const itemToGetMargin = document.querySelectorAll('.main-hero .e-con-inner');
                 const StyleToGetMarginValue = getComputedStyle(itemToGetMargin[0]);
                 const itemLeftMargin = StyleToGetMarginValue.marginLeft;
-                console.log("the gap is", itemLeftMargin)
                 const portfolioSlider = document.querySelector(".portfolio__slider");
 
                 const swiper = new Swiper('.swiper-portfolio', {
@@ -296,7 +295,7 @@ window.onload = function () {
 
                 //--- Adding padding to the start of portfolio-----//
 
-                const portfolioTimeline = gsap.timeline();
+                // const portfolioTimeline = gsap.timeline();
 
                 // Portfolio images reveal from small to large size
                 // portfolioTimeline.fromTo(".portfolio__slider",
@@ -340,25 +339,25 @@ window.onload = function () {
 
 
                 //-- Adding padding in front portfolio after resize of window
-                window.addEventListener('resize', () => {
-                    gsap.fromTo(
-                        ".swiper-portfolio",
-                        { paddingLeft: 0 },
-                        {
-                            paddingLeft: itemLeftMargin,
-                            autoAlpha: 1,
-                            ease: "elastic.out(1,1)",
-                            scrollTrigger: {
-                                trigger: ".swiper-portfolio",
-                                start: isDesktop ? "top 70%" : "20px 40%",
-                                end: "+=350",
-                                scrub: false,
-                                markers: false,
-                                toggleActions: "play complete none none"
-                            }
-                        }
-                    )
-                }, true);
+                // window.addEventListener('resize', () => {
+                //     gsap.fromTo(
+                //         ".swiper-portfolio",
+                //         { paddingLeft: 0 },
+                //         {
+                //             paddingLeft: itemLeftMargin,
+                //             autoAlpha: 1,
+                //             ease: "elastic.out(1,1)",
+                //             scrollTrigger: {
+                //                 trigger: ".swiper-portfolio",
+                //                 start: isDesktop ? "top 70%" : "20px 40%",
+                //                 end: "+=350",
+                //                 scrub: false,
+                //                 markers: false,
+                //                 toggleActions: "play complete none none"
+                //             }
+                //         }
+                //     )
+                // }, true);
 
                 //------------ portfolio end
 
