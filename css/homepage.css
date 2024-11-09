@@ -275,12 +275,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 .portfolio__image img {
-    max-width: 100%;
-    height: max-content;
+    max-width: 25em;
+    /* height: max-content; */
     opacity: 1;
     transition: all .5s cubic-bezier(.165, .84, .44, 1);
-    height: 30em;
-    width: 29em;
+    /* height: 30em;
+    width: 29em; */
 }
 
 
