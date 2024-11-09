@@ -834,7 +834,7 @@ window.onload = function () {
                         ease: "power2.out",
                         scrollTrigger: {
                             trigger: ".stat-1",
-                            start: "top 70%",
+                            start: isDesktop ? "top 70%" : "top center",
                             end: "top center",
                             scrub: true,
                             toggleActions: "play play none none"
@@ -853,7 +853,7 @@ window.onload = function () {
                         ease: "power2.out",
                         scrollTrigger: {
                             trigger: ".stat-2",
-                            start: "top 85%",
+                            start: isDesktop ? "top 85%" : "top center",
                             end: "top center",
                             scrub: true,
                             toggleActions: "play play none none"
@@ -871,7 +871,7 @@ window.onload = function () {
                         ease: "power2.out",
                         scrollTrigger: {
                             trigger: ".stat-3",
-                            start: "top 70%",
+                            start: isDesktop ? "top 70%" : "top center",
                             end: "top center",
                             scrub: true,
                             toggleActions: "play play none none"
@@ -889,7 +889,7 @@ window.onload = function () {
                         ease: "power2.out",
                         scrollTrigger: {
                             trigger: ".stat-4",
-                            start: "top 85%",
+                            start: isDesktop ? "top 85%" : "top center",
                             end: "top center",
                             scrub: true,
                             toggleActions: "play play none none"
