@@ -858,7 +858,7 @@ window.onload = function () {
                             scrub: true,
                             toggleActions: "play play none none"
                         }
-                    }), ">0.5"
+                    }, ">0.5")
                 fromTo(".stat-3",
                     {
                         x: "-100%",
@@ -876,7 +876,7 @@ window.onload = function () {
                             scrub: true,
                             toggleActions: "play play none none"
                         }
-                    }), ">0.5"
+                    }, ">0.5")
                 fromTo(".stat-4",
                     {
                         x: "100%",
@@ -894,7 +894,7 @@ window.onload = function () {
                             scrub: true,
                             toggleActions: "play play none none"
                         }
-                    }), ">0.5"
+                    }, ">0.5")
 
                 // Stat numbers anims fade in
                 const statComponents = gsap.utils.toArray(".stat-anims");
