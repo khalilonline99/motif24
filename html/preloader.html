@@ -83,6 +83,10 @@
         stroke: white !important;
     }
 
+    .preloader-white {
+        color: rgb(117, 117, 117);
+    }
+
     /* 	end */
 
     @media only screen and (max-width: 767px) {
@@ -168,7 +172,7 @@
 </div> -->
 
 <div class="preloader-wrapper">
-    <p class="preloader-white">Not an agency <br />
+    <p class="preloader-white initial-loading-text">Not an agency <br />
         An incubator company <br />
         Building, Growing &amp; Scaling <br />
         Luxury Lifestyle, Fashion, Beauty &amp; Wellness brands with human <br> first principles, right strategies and
@@ -266,7 +270,7 @@
             const createSplit = () => {
                 prelaoderSplit && prelaoderSplit.revert();
                 preloaderTl && preloaderTl.revert();
-                prelaoderSplit = new SplitText(".wrapper p", {
+                prelaoderSplit = new SplitText(".preloader-wrapper p", {
                     type: "chars"
                 });
 
@@ -286,7 +290,8 @@
 
             tlPreloader
                 .to("body", {
-                    overflow: "hidden", onComplete: () => createSplit()})
+                    overflow: "hidden", onComplete: () => createSplit()
+                })
                 // .from('[animate].lines', {
                 //     y: '100%',
                 //     opacity: 0,
