@@ -260,40 +260,36 @@ body::-webkit-scrollbar-thumb {
 
 
 .swiper-slide-portfolio {
-    /*cursor: url(https://wemotif.com/finalstaging/wp-content/uploads/2023/09/swipe-cursor.svg) 50 50, pointer;*/
-    width: 17vw;
-    width: max-content;
-    /* margin-right: 0.4rem; */
+    /*cursor: url(https://wemotif.com/finalstaging/wp-content/uploads/2023/09/swipe-cursor.svg) 50 50, pointer;
+    width: 17vw; */
 }
-
 
 .portfolio__image {
     position: relative;
     display: flex;
-    transition: border-radius .5s cubic-bezier(.165, .84, .44, 1);
-    overflow: hidden;
+    transition: border-radius 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    /*   overflow: hidden; */
 }
 
 .portfolio__image img {
-    max-width: 25em;
-    height: max-content;
     opacity: 1;
-    transition: all .5s cubic-bezier(.165, .84, .44, 1);
-    height: 30em;
-    width: 29em;
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    height: 20em;
+    width: 100%;
 }
-
 
 .portfolio__wrapper.animate .portfolio__image::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(20deg, rgba(0, 0, 0, .75) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(20deg,
+            rgba(0, 0, 0, 0.75) 0%,
+            rgba(0, 0, 0, 0) 100%);
     height: 100%;
     width: 100%;
     z-index: 1;
-    transition: border-radius .5s cubic-bezier(.165, .84, .44, 1);
+    transition: border-radius 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .portfolio__tags_wrapper {
@@ -310,7 +306,6 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 16px;
 }
 
 .portfolio__tags_wrapper span {
@@ -340,9 +335,6 @@ body::-webkit-scrollbar-thumb {
     line-height: 1.3em;
     font-style: normal;
     margin: 24px 0 8px 0;
-    /*background-image: radial-gradient(circle, #fff, rgb(255 255 255 / 58%));*/
-    /*-webkit-text-fill-color: transparent;*/
-    /*-webkit-background-clip: text;*/
 }
 
 .portfolio__title {
@@ -351,9 +343,6 @@ body::-webkit-scrollbar-thumb {
     font-size: 15px;
     font-weight: 500;
     font-style: normal;
-    /*background-image: radial-gradient(circle, #fff, rgb(255 255 255 / 58%));*/
-    /*-webkit-text-fill-color: transparent;*/
-    /*-webkit-background-clip: text;*/
 }
 
 .slider-number {
@@ -369,8 +358,6 @@ body::-webkit-scrollbar-thumb {
     width: max-content;
 }
 
-
-
 .landing {
     display: flex;
     justify-content: space-around;
@@ -380,11 +367,10 @@ body::-webkit-scrollbar-thumb {
     padding: 0 0.5rem;
 }
 
-
-
 .portfolio_single_image:hover {
     border-radius: 15px;
 }
+
 
 
 .intro {

@@ -260,37 +260,37 @@ window.onload = function () {
 
                 // ========Portfolio swiper Js ========== //
 
-                const itemToGetMargin = document.querySelectorAll('.main-hero .e-con-inner');
+                // const itemToGetMargin = document.querySelectorAll('.main-hero .e-con-inner');
                 // const StyleToGetMarginValue = getComputedStyle(itemToGetMargin[0]);
                 // const itemLeftMargin = StyleToGetMarginValue.marginLeft;
-                const portfolioSlider = document.querySelector(".portfolio__slider");
 
-                const swiper = new Swiper('.swiper-portfolio', {
+                const portfolioSlider = document.querySelector(".portfolio__slider");
+                const swiper = new Swiper(".swiper-portfolio", {
                     direction: "horizontal",
                     pagination: false,
                     navigation: false,
                     spaceBetween: 0,
-                    // slidesOffsetBefore: itemLeftMargin,
                     slidesPerView: 4,
                     breakpoints: {
                         320: {
                             slidesPerView: 1.5,
-                            spaceBetween: 5,
+                            spaceBetween: 20,
                             loop: false
                         },
                         768: {
-                            slidesPerView: 5,
-                            spaceBetween: 8,
+                            slidesPerView: 3.5,
+                            spaceBetween: 18,
                             loop: false,
                             mousewheel: false
                         },
                         1024: {
                             slidesPerView: 4,
-                            spaceBetween: 15,
-                            loop: true
+                            spaceBetween: 20,
+                            loop: false
                         }
                     }
                 });
+
 
 
                 //--- Adding padding to the start of portfolio-----//
@@ -821,79 +821,79 @@ window.onload = function () {
 
                 // stat number moving from right and left animation
                 const statTl = gsap.timeline()
-                .fromTo(".stat-1",
-                    {
-                        x: "-100%",
-                        rotation: -45,
-                    },
-                    {
-                        x: "0px",
-                        rotation: 0,
-                        duration: 1,
-                        ease: "power2.out",
-                        scrollTrigger: {
-                            trigger: ".stat-1",
-                            start: isDesktop ? "top 70%" : "top center",
-                            end: "top center",
-                            scrub: true,
-                            toggleActions: "play play none none"
-                        }
-                    })
-                .fromTo(".stat-2",
-                    {
-                        x: "100%",
-                        rotation: 45,
-                    },
-                    {
-                        x: "0px",
-                        rotation: 0,
-                        delay: 0.5,
-                        duration: 1,
-                        ease: "power2.out",
-                        scrollTrigger: {
-                            trigger: ".stat-2",
-                            start: isDesktop ? "top 85%" : "top center",
-                            end: "top center",
-                            scrub: true,
-                            toggleActions: "play play none none"
-                        }
-                    }, "+=3")
-                .fromTo(".stat-3",
-                    {
-                        x: "-100%",
-                        rotation: -45,
-                    },
-                    {
-                        x: "0px",
-                        rotation: 0,
-                        duration: 1,
-                        ease: "power2.out",
-                        scrollTrigger: {
-                            trigger: ".stat-3",
-                            start: isDesktop ? "top 70%" : "top center",
-                            end: "top center",
-                            scrub: true,
-                            toggleActions: "play play none none"
-                        }
-                    }, "+=1")
-                .fromTo(".stat-4",
-                    {
-                        x: "100%",
-                        rotation: 45,
-                    },
-                    {
-                        x: "0px",
-                        rotation: 0,
-                        duration: 1,
-                        ease: "power2.out",
-                        scrollTrigger: {
-                            trigger: ".stat-4",
-                            start: isDesktop ? "top 85%" : "top center",
-                            end: "top center",
-                            scrub: true,
-                            toggleActions: "play play none none"
-                        }
-                    }, "+=3")
+                    .fromTo(".stat-1",
+                        {
+                            x: "-100%",
+                            rotation: -45,
+                        },
+                        {
+                            x: "0px",
+                            rotation: 0,
+                            duration: 1,
+                            ease: "power2.out",
+                            scrollTrigger: {
+                                trigger: ".stat-1",
+                                start: isDesktop ? "top 70%" : "top center",
+                                end: "top center",
+                                scrub: true,
+                                toggleActions: "play play none none"
+                            }
+                        })
+                    .fromTo(".stat-2",
+                        {
+                            x: "100%",
+                            rotation: 45,
+                        },
+                        {
+                            x: "0px",
+                            rotation: 0,
+                            delay: 0.5,
+                            duration: 1,
+                            ease: "power2.out",
+                            scrollTrigger: {
+                                trigger: ".stat-2",
+                                start: isDesktop ? "top 85%" : "top center",
+                                end: "top center",
+                                scrub: true,
+                                toggleActions: "play play none none"
+                            }
+                        }, "+=3")
+                    .fromTo(".stat-3",
+                        {
+                            x: "-100%",
+                            rotation: -45,
+                        },
+                        {
+                            x: "0px",
+                            rotation: 0,
+                            duration: 1,
+                            ease: "power2.out",
+                            scrollTrigger: {
+                                trigger: ".stat-3",
+                                start: isDesktop ? "top 70%" : "top center",
+                                end: "top center",
+                                scrub: true,
+                                toggleActions: "play play none none"
+                            }
+                        }, "+=1")
+                    .fromTo(".stat-4",
+                        {
+                            x: "100%",
+                            rotation: 45,
+                        },
+                        {
+                            x: "0px",
+                            rotation: 0,
+                            duration: 1,
+                            ease: "power2.out",
+                            scrollTrigger: {
+                                trigger: ".stat-4",
+                                start: isDesktop ? "top 85%" : "top center",
+                                end: "top center",
+                                scrub: true,
+                                toggleActions: "play play none none"
+                            }
+                        }, "+=3")
 
                 // Stat numbers anims fade in
                 const statComponents = gsap.utils.toArray(".stat-anims");
