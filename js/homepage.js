@@ -72,16 +72,16 @@ window.onload = function () {
                 .to(".initial-loading-text", { opacity: 1, ease: "Power3.easeOut" })
                 .to(split.chars, {
                     color: 'white',
-                    stagger: 0.04,
+                    stagger: 0.03,
                     ease: 'power1.inOut',
-                }, 0.02)
+                }, 0.01)
                 .to(".scribbles_lines svg", { opacity: 0, duration: 1, ease: "Power3.easeOut" }, "<")
                 .to(".preloader", { duration: 1, height: "0vh", ease: "Power3.easeOut" }, "-=0.5")
                 .set(".initial-loading-text", { display: 'none' })
                 .set(".scribbles_lines svg", { display: 'none' })
                 .to(".preloader", { display: "none" })
                 .to("body", { overflow: "auto", onComplete: loadHomepageAnimations })
-                .to("body", { overflow: "auto" });
+                // .to("body", { overflow: "auto" });
 
         } else {
             document.querySelector('.loading-percentage-container').style.display = 'flex';
@@ -114,7 +114,7 @@ window.onload = function () {
                 .to(".scribbles_lines svg", { display: 'none', opacity: 0 })
                 .to(".preloader", { display: "none" })
                 .to("body", { overflow: "auto", onComplete: loadHomepageAnimations })
-                .to("body", { overflow: "auto" });
+                // .to("body", { overflow: "auto" });
         }
 
         function loadHomepageAnimations() {
