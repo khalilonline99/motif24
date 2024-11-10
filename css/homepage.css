@@ -813,16 +813,15 @@ body::-webkit-scrollbar-thumb {
     color: #f1f1f1;
 }
 
-.reveal-type2,
-.initial-loading-text {
+.reveal-type2 {
     color: #757575;
 }
 
 .initial-loading-text {
-    display: none;
+    /* display: none; */
     /* Initially hidden */
-    opacity: 0;
-    color: #ffffff;
+    /* opacity: 0; */
+    color: #757575;
     position: fixed;
     top: 15%;
     left: 15%;
