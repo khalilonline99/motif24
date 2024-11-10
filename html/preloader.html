@@ -211,7 +211,7 @@
         var seoTween = new TimelineMax({ repeat: -1 });
         const firstVisit = localStorage.getItem('visited');
         const tlPreloader = gsap.timeline();
-        gsap.registerPlugin(SplitText);
+
 
 
         // Function to randomly change 20% of the paths to orange
@@ -269,6 +269,7 @@
             //     tagName: 'span'
             // });
 
+            gsap.registerPlugin(SplitText);
             const split = new SplitText(".preloader-white", {
                 type: "lines, words, chars",
             });
