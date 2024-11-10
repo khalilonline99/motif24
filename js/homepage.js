@@ -79,6 +79,7 @@ window.onload = function () {
                 .to(".preloader", { duration: 1, height: "0vh", ease: "Power3.easeOut" }, "-=0.2")
                 .set(".initial-loading-text", { display: 'none' })
                 .to(".preloader-wrapper", { display: "none" })
+                .to(".preloader", { display: "none" })
                 .set(".scribbles_lines svg", { display: 'none' })
                 .to("body", { overflow: "auto", onComplete: loadHomepageAnimations }, 0.1)
                 // .to("body", { overflow: "auto" });
