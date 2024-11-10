@@ -268,28 +268,19 @@
             // });
 
             const createSplit = () => {
-                prelaoderSplit && prelaoderSplit.revert();
-                preloaderTl && preloaderTl.revert();
-                prelaoderSplit = new SplitText(".preloader-wrapper p", {
-                    type: "chars"
+                const split = new SplitText(".preloader-white", {
+                    type: "lines, words, chars",
                 });
-
-                preloaderTl = gsap
-                    .timeline()
-                    .set(
-                        prelaoderSplit.chars,
-                        {
-                            color: "white",
-                            stagger: 0.04
-                        },
-                        0.08
-                    );
+                const tlRevealType = gsap.timeline()
+                    .set(split.words, {
+                        color: 'white',
+                        stagger: 0.03,
+                        ease: 'power1.inOut',
+                    }, 0.05);
             };
-            let prelaoderSplit, preloaderTl;
-            const debouncer = gsap.delayedCall(0.2, createSplit).pause();
 
             tlPreloader
-                .to("body", {overflow: "hidden"})
+                .to("body", { overflow: "hidden" })
                 .call(() => {
                     createSplit();
                 })
@@ -309,8 +300,6 @@
                 .to(".preloader", { display: "none" })
                 // .to("body", { overflow: "auto", onComplete: loadHomepageAnimations });
                 .to("body", { overflow: "auto" });
-
-            window.addEventListener("resize", () => debouncer.restart(true));
 
         } else {
             document.querySelector('.loading-percentage-container').style.display = 'flex';
