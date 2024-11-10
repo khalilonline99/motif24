@@ -289,8 +289,9 @@
             const debouncer = gsap.delayedCall(0.2, createSplit).pause();
 
             tlPreloader
-                .to("body", {
-                    overflow: "hidden", onComplete: () => createSplit()
+                .to("body", {overflow: "hidden"})
+                .call(() => {
+                    createSplit();
                 })
                 // .from('[animate].lines', {
                 //     y: '100%',
