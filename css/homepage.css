@@ -818,9 +818,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .initial-loading-text {
-    /* display: none; */
+    display: none;
     /* Initially hidden */
-    /* opacity: 0; */
+    opacity: 0;
     color: #757575;
     position: fixed;
     top: 15%;
