@@ -72,11 +72,11 @@ window.onload = function () {
                 .to(".initial-loading-text", { opacity: 1, ease: "Power3.easeOut" })
                 .to(split.chars, {
                     color: 'white',
-                    stagger: 0.03,
+                    stagger: 0.02,
                     ease: 'power1.inOut',
                 }, 0.01)
                 .to(".scribbles_lines svg", { opacity: 0, duration: 1, ease: "Power3.easeOut" }, "<")
-                .to(".preloader", { duration: 1, height: "0vh", ease: "Power3.easeOut" }, "-=0.5")
+                .to(".preloader", { duration: 1, height: "0vh", ease: "Power3.easeOut" }, "-=0.2")
                 .set(".initial-loading-text", { display: 'none' })
                 .set(".scribbles_lines svg", { display: 'none' })
                 .to(".preloader", { display: "none" })
