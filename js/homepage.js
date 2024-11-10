@@ -56,7 +56,7 @@ window.onload = function () {
             document.querySelector(".initial-loading-text").style.opacity = 1;
 
             gsap.registerPlugin(SplitText, ScrollTrigger, CustomEase);
-            
+
             const split = new SplitText(".preloader-white", {
                 type: "lines, words, chars",
             });
@@ -69,7 +69,7 @@ window.onload = function () {
 
             tlPreloader
                 .to("body", { overflow: "hidden" })
-                .to(".initial-loading-text", { opacity: 0, duration: 1, ease: "Power3.easeOut" })
+                // .to(".initial-loading-text", { opacity: 0, duration: 1, ease: "Power3.easeOut" })
                 .to(split.chars, {
                     color: 'white',
                     stagger: 0.05,
