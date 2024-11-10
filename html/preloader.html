@@ -267,23 +267,12 @@
             //     tagName: 'span'
             // });
 
-            const createSplit = () => {
-                const split = new SplitText(".preloader-white", {
+            const split = new SplitText(".preloader-white", {
                     type: "lines, words, chars",
                 });
-                const tlRevealType = gsap.timeline()
-                    .set(split.words, {
-                        color: 'white',
-                        stagger: 0.03,
-                        ease: 'power1.inOut',
-                    }, 0.05);
-            };
 
             tlPreloader
-                .to("body", { overflow: "hidden" })
-                .call(() => {
-                    createSplit();
-                })
+                .to("body", { overflow: "hidden" })                
                 // .from('[animate].lines', {
                 //     y: '100%',
                 //     opacity: 0,
@@ -293,6 +282,11 @@
                 //     color: '#ffffff',
                 // })
                 .to(".initial-loading-text", { opacity: 0, duration: 1, ease: "Power3.easeOut" })
+                .set(split.words, {
+                        color: 'white',
+                        stagger: 0.03,
+                        ease: 'power1.inOut',
+                    }, 0.05)
                 .to(".scribbles_lines svg", { opacity: 0, duration: 1, ease: "Power3.easeOut" }, "<")
                 .to(".preloader", { duration: 1, height: "0vh", ease: "Power3.easeOut" }, "-=0.5")
                 .set(".initial-loading-text", { display: 'none' })
