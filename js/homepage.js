@@ -269,8 +269,6 @@ window.onload = function () {
                     direction: "horizontal",
                     pagination: false,
                     navigation: false,
-                    spaceBetween: 0,
-                    slidesPerView: 4,
                     breakpoints: {
                         320: {
                             slidesPerView: 1.5,
