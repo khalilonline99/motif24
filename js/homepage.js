@@ -81,7 +81,8 @@ window.onload = function () {
                 .to(".preloader-wrapper", { display: "none" })
                 .to(".preloader", { display: "none" })
                 .set(".scribbles_lines svg", { display: 'none' })
-                .to("body", { overflow: "auto", onComplete: loadHomepageAnimations }, 0.1)
+                .to({}, { duration: 1 })  
+                .to("body", { overflow: "auto", onComplete: loadHomepageAnimations })
                 // .to("body", { overflow: "auto" });
 
         } else {
