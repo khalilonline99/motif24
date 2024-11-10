@@ -158,14 +158,25 @@
 <!-- FirstUserLogin -->
 
 
-<div class="initial-loading-text" animate>
+<!-- <div class="initial-loading-text" animate>
     Not an agency <br />
     An incubator company <br />
     Building, Growing &amp; Scaling <br />
     Luxury Lifestyle, Fashion, Beauty &amp; Wellness brands with human first principles, right strategies and crazy
     ideas. <br />
     We connect brands with people and cultures. We are MOTIF® <br />
+</div> -->
+
+<div class="preloader-wrapper">
+    <p class="preloader-white">Not an agency <br />
+        An incubator company <br />
+        Building, Growing &amp; Scaling <br />
+        Luxury Lifestyle, Fashion, Beauty &amp; Wellness brands with human <br> first principles, right strategies and
+        crazy
+        ideas. <br />
+        We connect brands with people and cultures. We are MOTIF® <br /></p>
 </div>
+
 
 <!-- Preloader start -->
 <div class="preloader">
@@ -247,21 +258,43 @@
             document.querySelector(".initial-loading-text").style.display = "block";
             document.querySelector(".initial-loading-text").style.opacity = 1;
 
-            let typeSplit = new SplitType('[animate]', {
-                types: 'lines, words, chars',
-                tagName: 'span'
-            });
+            // let typeSplit = new SplitType('[animate]', {
+            //     types: 'lines, words, chars',
+            //     tagName: 'span'
+            // });
+
+            const createSplit = () => {
+                prelaoderSplit && prelaoderSplit.revert();
+                preloaderTl && preloaderTl.revert();
+                prelaoderSplit = new SplitText(".wrapper p", {
+                    type: "chars"
+                });
+
+                preloaderTl = gsap
+                    .timeline()
+                    .set(
+                        prelaoderSplit.chars,
+                        {
+                            color: "white",
+                            stagger: 0.04
+                        },
+                        0.08
+                    );
+            };
+            let prelaoderSplit, preloaderTl;
+            const debouncer = gsap.delayedCall(0.2, createSplit).pause();
 
             tlPreloader
-                .to("body", { overflow: "hidden" })
-                .from('[animate].lines', {
-                    y: '100%',
-                    opacity: 0,
-                    duration: 1,
-                    ease: 'sine.out',
-                    stagger: 0.1,
-                    color: '#ffffff',
-                })
+                .to("body", {
+                    overflow: "hidden", onComplete: () => createSplit()})
+                // .from('[animate].lines', {
+                //     y: '100%',
+                //     opacity: 0,
+                //     duration: 1,
+                //     ease: 'sine.out',
+                //     stagger: 0.1,
+                //     color: '#ffffff',
+                // })
                 .to(".initial-loading-text", { opacity: 0, duration: 1, ease: "Power3.easeOut" })
                 .to(".scribbles_lines svg", { opacity: 0, duration: 1, ease: "Power3.easeOut" }, "<")
                 .to(".preloader", { duration: 1, height: "0vh", ease: "Power3.easeOut" }, "-=0.5")
@@ -271,6 +304,7 @@
                 // .to("body", { overflow: "auto", onComplete: loadHomepageAnimations });
                 .to("body", { overflow: "auto" });
 
+            window.addEventListener("resize", () => debouncer.restart(true));
 
         } else {
             document.querySelector('.loading-percentage-container').style.display = 'flex';
