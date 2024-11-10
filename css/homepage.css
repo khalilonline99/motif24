@@ -274,7 +274,7 @@ body::-webkit-scrollbar-thumb {
 .portfolio__image img {
     opacity: 1;
     transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-    height: 20em;
+    /* height: 20em; */
     width: 100%;
 }
 
