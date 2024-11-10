@@ -279,13 +279,13 @@ window.onload = function () {
                         },
                         768: {
                             slidesPerView: 3.5,
-                            spaceBetween: 18,
+                            spaceBetween: 20,
                             loop: false,
                             mousewheel: false
                         },
                         1024: {
-                            slidesPerView: 4,
-                            spaceBetween: 24,
+                            slidesPerView: 3.5,
+                            spaceBetween: 30,
                             loop: false
                         }
                     }
