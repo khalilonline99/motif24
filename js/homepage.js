@@ -1158,6 +1158,18 @@ window.onload = function () {
             }
         });
 
+        gsap.to("#gradient", {
+            duration: 2,
+            repeat: -1,
+            repeatDelay: 0.8,
+            ease: "power1.inOut",
+          stagger: 0.1,
+            attr: { 
+              x1: "0%",
+              x2: "1000%"
+            },
+          });
+
 
 
 
