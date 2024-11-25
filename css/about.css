@@ -336,13 +336,13 @@ div#project-image_container {
     border-radius: 14px;
     opacity: 1;
     height: 80%;
-    
+
     padding: 0 10px;
 }
 
-.office-image img:nth-child(2),
-.office-image img:nth-child(4),
-.office-image img:nth-child(6) {
+.img-sl-2,
+.img-sl-4,
+.img-sl-6 {
     height: 45%;
 }
 
