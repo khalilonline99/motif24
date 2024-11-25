@@ -79,13 +79,16 @@
 }
 
 
-.reveal-type2, .initial-loading-text {
+.reveal-type2,
+.initial-loading-text {
     color: #757575;
 }
+
 .initial-loading-text {
-    display: none; /* Initially hidden */
+    display: none;
+    /* Initially hidden */
     opacity: 0;
-	color: #ffffff;
+    color: #ffffff;
     position: fixed;
     top: 15%;
     left: 15%;
@@ -102,7 +105,7 @@
 /* hero desktop */
 #campsuleImage {
     width: 8vw;
-	visibility: hidden;
+    visibility: hidden;
     /*width: 0;*/
     height: 3.2vw;
     -webkit-border-radius: 3vw;
@@ -195,7 +198,7 @@
 
 /* sub heading */
 .reveal-sub-heading-text {
-   opacity: 0;
+    opacity: 0;
 }
 
 .reveal-sub-heading-text .line {
@@ -326,80 +329,92 @@ div#project-image_container {
     gap: 1.5rem;
     /* height: 80vh !important; */
     overflow: hidden;
-    
-  }
-  
-  .office-image img {
+
+}
+
+.office-image img {
     border-radius: 14px;
     opacity: 1;
     height: 60%;
-  }
+}
 
-  .office-image img:nth-of-type(even) {
+img.office-image:nth-of-type(2),
+img.office-image:nth-of-type(4),
+img.office-image:nth-of-type(6) {
     height: 45%;
-  }
-  
-  @media only screen and (max-width: 1024px){
-     .office-image {
-    gap: 25px;
-    height: 60vh !important;
-    overflow: hidden;
-    padding-left: 1.5rem;
-  }
-  }
-  
-  @media only screen and (max-width: 767px){
-     .office-image {
-    gap: 25px;
-    height: 30vh !important;
-    overflow: hidden;
-    padding-left: 1rem;
-  }
-  }
-  
-  
+}
+
+.office-image img:first-of-type {
+    margin-right: 1.5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .office-image {
+        gap: 25px;
+        height: 60vh !important;
+        overflow: hidden;
+        padding-left: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .office-image {
+        gap: 25px;
+        height: 30vh !important;
+        overflow: hidden;
+        padding-left: 1rem;
+    }
+}
+
+
 /* big heading.. The founding story of motif */
 .split-child-big-text-anim {
     display: inline-block;
     transform: translate(0%, -100%);
-  }
-  .split-parent-big-text-anim {
+}
+
+.split-parent-big-text-anim {
     overflow: hidden;
-  }
-  .big-text-anim > div {
-  position: relative;
-  margin: 0;
-  }
-  .big-text-anim {
-      position: relative;
-      overflow: hidden;
-      /*opacity: 0;*/
-  }
+}
+
+.big-text-anim>div {
+    position: relative;
+    margin: 0;
+}
+
+.big-text-anim {
+    position: relative;
+    overflow: hidden;
+    /*opacity: 0;*/
+}
 
 
 
 
 /* story heading */
-.story-heading > div {
+.story-heading>div {
     position: relative;
     margin: 0;
-    }
-    .story-heading {
-        position: relative;
-        overflow: hidden;
-        /*opacity: 0;*/
-    }
-    .split-parent-story-heading {
-      overflow: hidden;
-    }
-    .split-child-story-heading {
-      display: inline-block;
-      transform: translate(0%, -100%);
-      }
+}
+
+.story-heading {
+    position: relative;
+    overflow: hidden;
+    /*opacity: 0;*/
+}
+
+.split-parent-story-heading {
+    overflow: hidden;
+}
+
+.split-child-story-heading {
+    display: inline-block;
+    transform: translate(0%, -100%);
+}
 
 
-  
-      /*.story-p {*/
+
+/*.story-p {*/
 /*    opacity: 0;*/
 /*}*/
 
@@ -408,90 +423,95 @@ div#project-image_container {
 blockquote {
     color: white;
     font-size: calc(100vw/45);
-     margin: 0;
-    }
-    cite {
-      display: block;
-      text-align: left;
-      font-family: "ClashDisplay", Sans-serif;
-      margin-top: 2.5rem;
-      font-size: 1.5rem;
-      font-weight: 600;
-      color: white;
-      font-style: normal;
-    }
-    blockquote p {
-      font-family: "ClashDisplay", Sans-serif;
-      font-weight: 600;
-      line-height: 1.2;
-      letter-spacing: 1px;
-    }
-    blockquote p span { 
-      will-change: opacity, filter;
-      opacity: 0;
-      filter: blur(0px);
-    }
-    /*p {*/
-    /*  quotes: "“" "”" "‘" "’";*/
-    /*}*/
-    /*p:before {*/
-    /*    content: open-quote;*/
-    /*    margin-right: .8rem;*/
-    /*}*/
-    /*p:after {*/
-    /*  content: close-quote;*/
-    /*}*/
-    /*p:before, p:after {*/
-    /*  color: #ccc;*/
-    /*  font-size: 4rem;*/
-    /*}*/
-    @media only screen and (max-width: 1024px) {
-        blockquote {
+    margin: 0;
+}
+
+cite {
+    display: block;
+    text-align: left;
+    font-family: "ClashDisplay", Sans-serif;
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    font-style: normal;
+}
+
+blockquote p {
+    font-family: "ClashDisplay", Sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 1px;
+}
+
+blockquote p span {
+    will-change: opacity, filter;
+    opacity: 0;
+    filter: blur(0px);
+}
+
+/*p {*/
+/*  quotes: "“" "”" "‘" "’";*/
+/*}*/
+/*p:before {*/
+/*    content: open-quote;*/
+/*    margin-right: .8rem;*/
+/*}*/
+/*p:after {*/
+/*  content: close-quote;*/
+/*}*/
+/*p:before, p:after {*/
+/*  color: #ccc;*/
+/*  font-size: 4rem;*/
+/*}*/
+@media only screen and (max-width: 1024px) {
+    blockquote {
         font-size: calc(100vw/30);
-        
+
         margin: 0;
-        }
-        cite {
-            font-size: calc(100vw/45);
-            margin-top: 45px;
-        }
     }
-    @media only screen and (max-width: 767px) {
-        blockquote {
+
+    cite {
+        font-size: calc(100vw/45);
+        margin-top: 45px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    blockquote {
         font-size: calc(100vw/25);
         margin: 0;
-        }
-        cite {
-            font-size: calc(100vw/25);
-            margin: 0;
-        }
     }
 
+    cite {
+        font-size: calc(100vw/25);
+        margin: 0;
+    }
+}
 
 
-    /* what why heading */
 
-  .what-why-heading > div {
+/* what why heading */
+
+.what-why-heading>div {
     position: relative;
     margin: 0;
-    }
-    .what-why-heading {
-        position: relative;
-        overflow: hidden;
-        /*opacity: 0;*/
-    }
-    .split-parent-what-why-heading {
-      overflow: hidden;
-    }
-    .split-child-what-why-heading {
-      display: inline-block;
-      transform: translate(0%, -100%);
-      }
-      
-      
-  @media only screen and (max-width: 767px) {
-  
-      
-  }
+}
 
-  
+.what-why-heading {
+    position: relative;
+    overflow: hidden;
+    /*opacity: 0;*/
+}
+
+.split-parent-what-why-heading {
+    overflow: hidden;
+}
+
+.split-child-what-why-heading {
+    display: inline-block;
+    transform: translate(0%, -100%);
+}
+
+
+@media only screen and (max-width: 767px) {}
