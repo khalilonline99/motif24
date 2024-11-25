@@ -352,21 +352,37 @@ window.onload = function () {
 
 
 
-                // -- Office images scroll and change
-                let officeImages = document.querySelector(".office-image");
-                gsap.to(".office-image img", {
-                    opacity: 1,
-                    autoAlpha: 1,
-                    x: () => -(officeImages.scrollWidth - window.innerWidth),
-                    scrollTrigger: {
-                        trigger: officeImages,
-                        pin: officeImages,
-                        start: "center center",
-                        end: () => "+=" + (officeImages.scrollWidth - window.innerWidth),
-                        scrub: true,
-                        invalidateOnRefresh: true
-                    }
+                    // Office images auto scroll
+                const logoImages = gsap.utils.toArray(".office-image img");
+
+                const loop = horizontalLoop(logoImages, {
+                    paused: true,
+                    repeat: -1
                 });
+                loop.play()
+                ScrollTrigger.create({
+                    start: 0,
+                    end: 'max',
+                    onUpdate: function (self) {
+                        self.direction === -1 ? loop.timeScale(-1) : loop.timeScale(1)
+                    }
+                })
+
+                // -- Office images scroll and change
+                // let officeImages = document.querySelector(".office-image");
+                // gsap.to(".office-image img", {
+                //     opacity: 1,
+                //     autoAlpha: 1,
+                //     x: () => -(officeImages.scrollWidth - window.innerWidth),
+                //     scrollTrigger: {
+                //         trigger: officeImages,
+                //         pin: officeImages,
+                //         start: "center center",
+                //         end: () => "+=" + (officeImages.scrollWidth - window.innerWidth),
+                //         scrub: true,
+                //         invalidateOnRefresh: true
+                //     }
+                // });
 
 
 
