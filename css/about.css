@@ -344,9 +344,6 @@ img.office-image:nth-of-type(6) {
     height: 45%;
 }
 
-.office-image img:first-of-type {
-    margin-right: 1.5rem;
-}
 
 @media only screen and (max-width: 1024px) {
     .office-image {
