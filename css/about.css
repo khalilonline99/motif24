@@ -322,8 +322,9 @@ div#project-image_container {
 .office-image {
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    height: 80vh !important;
+    align-items: flex-end;
+    gap: 1.5rem;
+    /* height: 80vh !important; */
     overflow: hidden;
     
   }
@@ -331,6 +332,11 @@ div#project-image_container {
   .office-image img {
     border-radius: 14px;
     opacity: 1;
+    height: 60%;
+  }
+
+  .office-image img:nth-of-type(even) {
+    height: 45%;
   }
   
   @media only screen and (max-width: 1024px){

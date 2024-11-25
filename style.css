@@ -16,6 +16,10 @@ body {
     overflow-x: hidden !important;
     /*padding: 0 2%;*/
 }
+
+#comment {
+    display: none;
+}
 /*.primary-button--2 {*/
 /*    cursor: none;*/
 /*}*/
