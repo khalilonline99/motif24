@@ -339,9 +339,9 @@ div#project-image_container {
     padding: 0 10px;
 }
 
-img.office-image:nth-of-type(2),
-img.office-image:nth-of-type(4),
-img.office-image:nth-of-type(6) {
+.office-image img:nth-of-type(2),
+.office-image img:nth-of-type(4),
+.office-image img:nth-of-type(6) {
     height: 45%;
 }
 
