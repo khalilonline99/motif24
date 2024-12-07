@@ -273,7 +273,7 @@ window.onload = function () {
                 })
                 tlMoibleHero.to('.circle', {
                     duration: 1.5,
-                    width: "8vw",// 3rd Lifestyle
+                    width: "6.5vw",// 3rd Lifestyle
                     ease: "expo.out"
                 })
                 tlMoibleHero.to('.rolling-texts', {
