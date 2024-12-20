@@ -88,20 +88,20 @@ body::-webkit-scrollbar-thumb {
 }
 
 #campsuleImage {
-    background-image: url("https://wemotif.com/finalstaging/wp-content/uploads/2023/07/Branding-and-advertising-agency.webp");
+    background-image: url("https://wemotif.com/wp-content/uploads/2023/07/Branding-and-advertising-agency.webp");
 }
 
 #campsuleImage2 {
-    background-image: url("https://wemotif.com/finalstaging/wp-content/uploads/2023/09/LACE.webp");
+    background-image: url("https://wemotif.com/wp-content/uploads/2023/09/LACE.webp");
 }
 
 #campsuleImage3 {
-    background-image: url("https://wemotif.com/finalstaging/wp-content/uploads/2023/07/Luxury-Lifestyle-Brands-MOTIF-e1689442044701.webp");
+    background-image: url("https://wemotif.com/wp-content/uploads/2023/07/Luxury-Lifestyle-Brands-MOTIF-e1689442044701.webp");
     margin-right: 3%;
 }
 
 #campsuleImage4 {
-    background-image: url("https://wemotif.com/finalstaging/wp-content/uploads/2023/07/Beauty-Brands-MOTIF-1.webp");
+    background-image: url("https://wemotif.com/wp-content/uploads/2023/07/Beauty-Brands-MOTIF-1.webp");
 }
 
 
@@ -260,7 +260,7 @@ body::-webkit-scrollbar-thumb {
 
 
 .swiper-slide-portfolio {
-    /*cursor: url(https://wemotif.com/finalstaging/wp-content/uploads/2023/09/swipe-cursor.svg) 50 50, pointer;
+    /*cursor: url(https://wemotif.com/wp-content/uploads/2023/09/swipe-cursor.svg) 50 50, pointer;
     width: 17vw; */
 }
 

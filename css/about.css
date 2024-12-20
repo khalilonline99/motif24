@@ -126,23 +126,23 @@
 
 @keyframes changeBg {
     0% {
-        background-image: url("https://wemotif.com/finalstaging/wp-content/uploads/2023/07/home-8-img-2.jpg");
+        background-image: url("https://wemotif.com/wp-content/uploads/2023/07/home-8-img-2.jpg");
     }
 
     25% {
-        background-image: url("https://wemotif.com/finalstaging/wp-content/uploads/2023/07/home-8-img-2.jpg");
+        background-image: url("https://wemotif.com/wp-content/uploads/2023/07/home-8-img-2.jpg");
     }
 
     50% {
-        background-image: url("https://wemotif.com/finalstaging/wp-content/uploads/2023/07/LACE.png");
+        background-image: url("https://wemotif.com/wp-content/uploads/2023/07/LACE.png");
     }
 
     75% {
-        background-image: url("https://wemotif.com/finalstaging/wp-content/uploads/2023/09/blog-list-img-8.jpg");
+        background-image: url("https://wemotif.com/wp-content/uploads/2023/09/blog-list-img-8.jpg");
     }
 
     100% {
-        background-image: url("https://wemotif.com/finalstaging/wp-content/uploads/2023/07/home-8-img-2.jpg");
+        background-image: url("https://wemotif.com/wp-content/uploads/2023/07/home-8-img-2.jpg");
     }
 }
 

@@ -92,7 +92,7 @@ function hello_elementor_child_scripts_styles()
             HELLO_ELEMENTOR_CHILD_VERSION
         );
         wp_enqueue_script('js-how-we-do', get_stylesheet_directory_uri() . '/js/how-we-do.js', array('jquery'), '', true);
-    } elseif (strpos($perma, '/finalstaging/about') !== false) {
+    } elseif (strpos($perma, '/about') !== false) {
         //about page
         wp_enqueue_style(
             'hello-elementor-child-style-about',
@@ -103,7 +103,7 @@ function hello_elementor_child_scripts_styles()
             HELLO_ELEMENTOR_CHILD_VERSION
         );
         wp_enqueue_script('js-about', get_stylesheet_directory_uri() . '/js/about.js', array('jquery'), '', true);
-    } elseif (strpos($perma, '/finalstaging/the-motif-process') !== false) {
+    } elseif (strpos($perma, '/the-motif-process') !== false) {
         //motif process
         wp_enqueue_style(
             'hello-elementor-child-style-the-motif-process',
@@ -114,7 +114,7 @@ function hello_elementor_child_scripts_styles()
             HELLO_ELEMENTOR_CHILD_VERSION
         );
         wp_enqueue_script('js-how-we-do', get_stylesheet_directory_uri() . '/js/how-we-do.js', array('jquery'), '', true);
-    } elseif (strpos($perma, '/finalstaging/why-motif') !== false) {
+    } elseif (strpos($perma, '/why-motif') !== false) {
         //why motif page
         wp_enqueue_style(
             'hello-elementor-child-style-why-motif',
@@ -125,7 +125,7 @@ function hello_elementor_child_scripts_styles()
             HELLO_ELEMENTOR_CHILD_VERSION
         );
         wp_enqueue_script('js-why-motif', get_stylesheet_directory_uri() . '/js/why-motif.js', array('jquery'), '', true);
-    } elseif (strpos($perma, '/finalstaging/contact') !== false) {
+    } elseif (strpos($perma, '/contact') !== false) {
         //contact page
         wp_enqueue_style(
             'hello-elementor-child-style-contact',
@@ -137,7 +137,7 @@ function hello_elementor_child_scripts_styles()
         );
         wp_enqueue_script('js-contact', get_stylesheet_directory_uri() . '/js/contact.js', array('jquery'), '', true);
     } elseif (
-        strpos($perma, '/finalstaging/pulse-b2b-commerce-agency') !== false
+        strpos($perma, '/pulse-b2b-commerce-agency') !== false
     ) {
         //Single pages
         wp_enqueue_style(
@@ -150,7 +150,7 @@ function hello_elementor_child_scripts_styles()
         );
         wp_enqueue_script('js-singlePageFull', get_stylesheet_directory_uri() . '/js/singlePageFull.js', array('jquery'), '', true);
     } elseif (
-        strpos($perma, '/finalstaging/dtc-agency-motif-the-agency') !== false
+        strpos($perma, '/dtc-agency-motif-the-agency') !== false
     ) {
         //Single pages
         wp_enqueue_style(
@@ -163,7 +163,7 @@ function hello_elementor_child_scripts_styles()
         );
         wp_enqueue_script('js-singlePageFull', get_stylesheet_directory_uri() . '/js/singlePageFull.js', array('jquery'), '', true);
     } elseif (
-        strpos($perma, '/finalstaging/shopify-plus-partner-agency') !== false
+        strpos($perma, '/shopify-plus-partner-agency') !== false
     ) {
         //Single pages
         wp_enqueue_style(
@@ -176,7 +176,7 @@ function hello_elementor_child_scripts_styles()
         );
         wp_enqueue_script('js-singlePageFull', get_stylesheet_directory_uri() . '/js/singlePageFull.js', array('jquery'), '', true);
     } elseif (
-        strpos($perma, '/finalstaging/elite-bigcommerce-partner-agency') !== false
+        strpos($perma, '/elite-bigcommerce-partner-agency') !== false
     ) {
         //Single pages
         wp_enqueue_style(
@@ -189,7 +189,7 @@ function hello_elementor_child_scripts_styles()
         );
         wp_enqueue_script('js-singlePageFull', get_stylesheet_directory_uri() . '/js/singlePageFull.js', array('jquery'), '', true);
     } elseif (
-        strpos($perma, '/finalstaging/luxury-lifestyle-advertising-branding-agency-nyc-la-sf') !== false
+        strpos($perma, '/luxury-lifestyle-advertising-branding-agency-nyc-la-sf') !== false
     ) {
         //Single OTHER pages
         wp_enqueue_style(
@@ -202,7 +202,7 @@ function hello_elementor_child_scripts_styles()
         );
         wp_enqueue_script('js-singlePageOthers', get_stylesheet_directory_uri() . '/js/singlePageOthers.js', array('jquery'), '', true);
     } elseif (
-        strpos($perma, '/finalstaging/fashion-agency') !== false
+        strpos($perma, '/fashion-agency') !== false
     ) {
         //Single OTHER pages
         wp_enqueue_style(
@@ -215,7 +215,7 @@ function hello_elementor_child_scripts_styles()
         );
         wp_enqueue_script('js-singlePageOthers', get_stylesheet_directory_uri() . '/js/singlePageOthers.js', array('jquery'), '', true);
     } elseif (
-        strpos($perma, '/finalstaging/beauty-brand-marketing-advertising-agency') !== false
+        strpos($perma, '/beauty-brand-marketing-advertising-agency') !== false
     ) {
         //Single OTHER pages
         wp_enqueue_style(

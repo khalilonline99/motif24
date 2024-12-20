@@ -1268,9 +1268,9 @@ window.onload = function () {
         new hoverEffect({
             parent: document.querySelector('.distortion-6'),
             intensity: 0.3,
-            image1: 'https://wemotif.com/finalstaging/wp-content/uploads/2023/09/Section-graphic-without-stamp.png',
-            image2: 'https://wemotif.com/finalstaging/wp-content/uploads/2023/09/Section-graphic-without-stamp.png',
-            displacementImage: 'https://wemotif.com/finalstaging/wp-content/uploads/2023/09/distortionImage.png',
+            image1: 'https://wemotif.com/wp-content/uploads/2023/09/Section-graphic-without-stamp.png',
+            image2: 'https://wemotif.com/wp-content/uploads/2023/09/Section-graphic-without-stamp.png',
+            displacementImage: 'https://wemotif.com/wp-content/uploads/2023/09/distortionImage.png',
         });
 
         // Distortion How we help
@@ -1278,9 +1278,9 @@ window.onload = function () {
             parent: document.querySelector('.distortion-7'),
             intensity: 0.3,
             imageRatio: 1,
-            image1: 'https://wemotif.com/finalstaging/wp-content/uploads/2023/11/what-we-do-word.png',
-            image2: 'https://wemotif.com/finalstaging/wp-content/uploads/2023/11/what-we-do-word.png',
-            displacementImage: 'https://wemotif.com/finalstaging/wp-content/uploads/2023/09/distortionImage.png',
+            image1: 'https://wemotif.com/wp-content/uploads/2023/11/what-we-do-word.png',
+            image2: 'https://wemotif.com/wp-content/uploads/2023/11/what-we-do-word.png',
+            displacementImage: 'https://wemotif.com/wp-content/uploads/2023/09/distortionImage.png',
         });
 
 

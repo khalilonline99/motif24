@@ -563,9 +563,9 @@ new hoverEffect({
     intensity: 0.3,
     imagesRatio: 0.66,
     easing: Expo.easeOut,
-    image1: 'https://wemotif.com/finalstaging/wp-content/uploads/2023/07/About-us-Motif-1024x683.jpeg',
-    image2: 'https://wemotif.com/finalstaging/wp-content/uploads/2023/07/About-us-Motif-1024x683.jpeg',
-    displacementImage: 'https://wemotif.com/finalstaging/wp-content/uploads/2023/09/distortionImage.png',
+    image1: 'https://wemotif.com/wp-content/uploads/2023/07/About-us-Motif-1024x683.jpeg',
+    image2: 'https://wemotif.com/wp-content/uploads/2023/07/About-us-Motif-1024x683.jpeg',
+    displacementImage: 'https://wemotif.com/wp-content/uploads/2023/09/distortionImage.png',
 });
 
 //--- image 2
@@ -574,9 +574,9 @@ new hoverEffect({
     intensity: 0.3,
     imagesRatio: 1.30,
     easing: Expo.easeOut,
-    image1: 'https://wemotif.com/finalstaging/wp-content/uploads/2023/07/6130aa3116b32af42eedffab_SCREENSITE4-2-e1690658770955.jpg',
-    image2: 'https://wemotif.com/finalstaging/wp-content/uploads/2023/07/6130aa3116b32af42eedffab_SCREENSITE4-2-e1690658770955.jpg',
-    displacementImage: 'https://wemotif.com/finalstaging/wp-content/uploads/2023/09/distortionImage.png',
+    image1: 'https://wemotif.com/wp-content/uploads/2023/07/6130aa3116b32af42eedffab_SCREENSITE4-2-e1690658770955.jpg',
+    image2: 'https://wemotif.com/wp-content/uploads/2023/07/6130aa3116b32af42eedffab_SCREENSITE4-2-e1690658770955.jpg',
+    displacementImage: 'https://wemotif.com/wp-content/uploads/2023/09/distortionImage.png',
 });
 
 //--- image 2
@@ -585,7 +585,7 @@ new hoverEffect({
     intensity: 0.3,
     imagesRatio: 1.32,
     easing: Expo.easeOut,
-    image1: 'https://wemotif.com/finalstaging/wp-content/uploads/2023/07/MOTIF-Lifestyle-Brand-WORK-.png',
-    image2: 'https://wemotif.com/finalstaging/wp-content/uploads/2023/07/MOTIF-Lifestyle-Brand-WORK-.png',
-    displacementImage: 'https://wemotif.com/finalstaging/wp-content/uploads/2023/09/distortionImage.png',
+    image1: 'https://wemotif.com/wp-content/uploads/2023/07/MOTIF-Lifestyle-Brand-WORK-.png',
+    image2: 'https://wemotif.com/wp-content/uploads/2023/07/MOTIF-Lifestyle-Brand-WORK-.png',
+    displacementImage: 'https://wemotif.com/wp-content/uploads/2023/09/distortionImage.png',
 });
